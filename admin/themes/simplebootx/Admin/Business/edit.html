@@ -1,0 +1,146 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Business/index')}">商户列表</a></li>
+			<li><a href="{:U('Business/add')}">商户添加</a></li>
+			<li class="active"><a>商户编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form  form-flat" action="{:U('Business/edit_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">商户名称:</label>
+					<div class="controls">
+						<input type="text" name="name" value="{$data.name}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">类别:</label>
+					<div class="controls">
+						<select name="cate_id">
+							<option value="">请选择</option>
+							<foreach name="cates" item="vo">
+							<option value="{$vo.id}" <if condition="$vo['id'] == $data['cate_id']">selected</if>>{$vo.name}</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">缩略图:</label>
+					<div class="controls">
+						<input type="hidden" name="logo" id="thumb" value="{$data.logo}">
+						<a href="javascript:upload_one_image('图片上传','#thumb');">
+							<if condition="empty($data['logo'])">
+								<img src="__TMPL__Public/assets/images/default-thumbnail.png" id="thumb-preview" width="135" style="cursor: hand"/>
+							<else />
+								<img src="{:sp_get_image_preview_url($data['logo'])}" id="thumb-preview" width="135" style="cursor: hand"/>
+							</if>
+						</a>
+						<input type="button" class="btn btn-small" onClick="$('#thumb-preview').attr('src','__TMPL__Public/assets/images/default-thumbnail.png');$('#thumb').val('');return false;" value="取消图片">
+					</div>
+				</div>
+				<div class="control-group" id="area_id" <if condition="$data['cate_id'] != '8'">style="display:none"</if>>
+					<label class="control-label">所属区域:</label>
+					<div class="controls">
+						<select name="area_id">
+							<option value="0">请选择</option>
+							<option value="1" <if condition="$data['area_id'] == '1'">selected</if>>A区</option>
+							<option value="2" <if condition="$data['area_id'] == '2'">selected</if>>B区</option>
+							<option value="3" <if condition="$data['area_id'] == '3'">selected</if>>C区</option>
+							<option value="4" <if condition="$data['area_id'] == '4'">selected</if>>D区</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group" id="map" <if condition="$data['cate_id'] == '8'">style="display:none"</if>>
+					<label class="control-label">坐标:</label>
+					<div class="controls">
+						横坐标：<input type="text" name="lng" value="{$data.lng}" style="width:30px">
+						<span class="form-required">*</span>
+						纵坐标：<input type="text" name="lat" value="{$data.lat}" style="width:30px">
+						<span class="form-required">*</span>
+						<a href="{:U('Building/addmouse')}" target="_blank">选择位置</a>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">房东:</label>
+					<div class="controls">
+						<input type="text" name="owner" value="{$data.owner}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">房东身份证:</label>
+					<div class="controls">
+						<input type="text" name="owner_idcard" value="{$data.owner_idcard}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">负责人:</label>
+					<div class="controls">
+						<input type="text" name="manage" value="{$data.manage}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">负责人身份证:</label>
+					<div class="controls">
+						<input type="text" name="manage_idcard" value="{$data.manage_idcard}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">营业执照号码:</label>
+					<div class="controls">
+						<input type="text" name="idcard" value="{$data.idcard}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">营业地址:</label>
+					<div class="controls">
+						<input type="text" name="address" value="{$data.address}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">备注:</label>
+					<div class="controls">
+						<textarea name="remark" rows="5" cols="57" style="width: 500px;">{$data.remark}</textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$data.id}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div> 
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript">
+		$('#cate_id').change(function (e) {
+			var id = $(this).val();
+			if(id == 8){
+				$('#area_id').css('display','block'); 
+				$('#map').css('display','none');
+			}else{
+				$('#area_id').css('display','none'); 
+				$('#map').css('display','block'); 
+			}
+			
+			$.getJSON(href).done(function (data) {
+				if (data.state === 'success') {
+					$('#'+id).empty();
+					var option = $("<option>").val('').text('请选择');
+					$('#'+id).append(option);
+					
+					for(i = 0;i < data.option.length;i++){
+						var option = $("<option>").val(data.option[i]['id']).text(data.option[i]['text']);
+						$('#'+id).append(option);
+					}
+				} else if (data.state === 'fail') {
+					
+				}
+			});
+		});
+	</script>
+</body>
+</html>

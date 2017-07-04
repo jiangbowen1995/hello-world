@@ -1,0 +1,61 @@
+.clrfix:after, .clearfix:after { clear: both; display: block; height: 0; visibility: hidden; content: "." }
+.clrfix, .clearfix { zoom: 1 }
+.hide { display: none }
+.reg-wrap { font-family: "微软雅黑"; color: #3a3a3a }
+.indexpart { width: 1100px; height: 100%; margin: 0 auto }
+.reg-wrap .main { padding: 38px 0; width: 898px; min-height: 500px; margin: auto }
+.main h3.tit { height: 70px; line-height: 70px; text-align: center; font-size: 18px }
+.reg-wrap .main ul.nav { border: 1px solid #dcdcdc; height: 84px; line-height: 84px; background-color: #fff; margin-bottom: 30px }
+.reg-wrap .main .nav li { float: left; width: 50%; font-size: 15px; text-align: center }
+.reg-wrap .main .nav li { color: #666 }
+.reg-wrap .main .nav li.cur { color: #2abb97 }
+.reg-wrap .main .nav li em { border: 1px solid #2abb97; background-color: #fff; color: #2abb97; border-radius: 50%; width: 30px; height: 30px; line-height: 30px; display: inline-block; margin-right: 15px; font-size: 22px }
+.reg-wrap .main .nav li.cur em { background-color: #2abb97; color: #fff }
+.reg-wrap .main .m { border: 1px solid #dcdcdc; background-color: #fff; padding: 59px 0 50px; min-height: 400px }
+.reg-wrap .main .m.pt { padding-top: 160px; min-height: 299px }
+.reg-wrap .main .m dl { margin-left: 205px }
+.reg-wrap .main .m dl dt, .reg-wrap .main .m dl dd { display: inline-block; float: left }
+.reg-wrap .main .m.nf dl dt, .reg-wrap .main .m.nf dl dd { float: initial; display: block }
+.reg-wrap .main .m.nf dl { margin: 0 }
+.reg-wrap .main .m.nf dl dt, .reg-wrap .main .m.nf dl dd { width: 306px; margin: 0 auto; text-align: left; padding: 0 }
+.reg-wrap .main .m.nf dl dd input { width: 100% }
+.reg-wrap .main .m dl dt { width: 85px; text-align: right; padding-right: 15px; color: #3a3a3a; font-size: 15px; line-height: 40px }
+.reg-wrap .main .m dl dt ins { color: red; font-size: 16px }
+.reg-wrap .main .m dl dd { width: 420px }
+.reg-wrap .main .m dl dd input { width: 398px; border: 1px solid #dfdfdf; border-radius: 3px; height: 38px; line-height: 38px; text-indent: 15px }
+.reg-wrap .main .m dl dd input.code { width: 256px; margin-right: 10px }
+.reg-wrap .main .m dl dd img { width: 130px; height: 40px; display: inline-block; background-color: #f3f3f3; cursor: pointer }
+.reg-wrap .main .m dl dd a.getcode { width: 130px; height: 38px; border: 1px solid #dfdfdf; border-radius: 3px; background-color: #f2f2f2; display: inline-block; color: #333; line-height: 38px; text-align: center; font-size: 14px; vertical-align: bottom }
+.reg-wrap .main .m dl dd a.cur { color: #999 }
+.reg-wrap .main .m dl dd em { height: 28px; line-height: 28px; color: red; font-size: 13px; visibility: hidden; display: inline-block }
+.reg-wrap .main .m dl dd em a { background: transparent; display: inline; color: #2abb97; border: 0 none; line-height: 28px }
+.reg-wrap .main .m .bor { border-bottom: 1px dashed #e0e0e0; margin: 10px 0 37px 0 }
+.reg-wrap .main .m p { text-align: center; font-size: 13px }
+.reg-wrap .main .m p input[type=checkbox] { -webkit-appearance: none; width: 16px; height: 16px; border: 1px solid #ccc; background: url(../images/select.jpg) no-repeat center; position: relative; top: -2px }
+.reg-wrap .main .m p input[type=checkbox]:checked { background: url(../images/selected.jpg) no-repeat center }
+.reg-wrap .main .m a { color: #2abb97 }
+.reg-wrap .main .m .sub-btn { width: 300px; height: 38px; line-height: 38px; color: #fff; text-align: center; display: block; margin: 0 auto; background-color: #2cbb97; border-radius: 3px; font-size: 16px; margin-top: 20px; border:none }
+.reg-wrap .main .m .sub-btn.gray { background-color: #ccc }
+.reg-wrap .main .company h3 { text-align: center; font-size: 15px; height: 110px; line-height: 110px; margin-bottom: 20px }
+.reg-wrap .main .company ul { max-height: 490px; overflow-y: auto }
+.reg-wrap .main .company ul li { text-align: center; height: 45px; line-height: 45px; margin: 0 auto; margin-bottom: 25px }
+.reg-wrap .main .company ul li a { color: #3a3a3a; font-size: 15px; display: inline-block; text-align: center; min-width: 358px; border: 1px solid #dfdfdf; padding: 0 20px }
+.reg-wrap .main .company p.error { color: red; font-size: 13px; height: 50px; line-height: 50px }
+p.copyright { padding-top: 130px; text-align: center }
+
+
+.Validform_checktip {color: #999; }
+.Validform_right { color: #71b83d; padding-left: 20px; background: url(../images/right.png) no-repeat left center; }
+.Validform_wrong { color: red; padding-left: 20px; white-space: nowrap; background: url(../images/error.png) no-repeat left center; }
+.Validform_loading { padding-left: 20px; background: url(../images/onLoad.gif) no-repeat left center; }
+.Validform_error { background-color: #ffe7e7; }
+#Validform_msg { color: #7d8289; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width: 280px; -webkit-box-shadow: 2px 2px 3px #aaa; -moz-box-shadow: 2px 2px 3px #aaa; background: #fff; position: absolute; top: 0px; right: 50px; z-index: 99999; display: none; filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+}
+#Validform_msg .iframe { position: absolute; left: 0px; top: -1px; z-index: -1; }
+#Validform_msg .Validform_title { line-height: 25px; height: 25px; text-align: left; font-weight: bold; padding: 0 8px; color: #fff; position: relative; background-color: #000; }
+#Validform_msg a.Validform_close:link, #Validform_msg a.Validform_close:visited { line-height: 22px; position: absolute; right: 8px; top: 0px; color: #fff; text-decoration: none; }
+#Validform_msg a.Validform_close:hover { color: #cc0; }
+#Validform_msg .Validform_info { padding: 8px; border: 1px solid #000; border-top: none; text-align: left; }
+.registerform li { }
+
+.joinweb dl{ margin-bottom:20px}

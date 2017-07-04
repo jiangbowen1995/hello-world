@@ -1,0 +1,6 @@
+@charset "utf-8";
+.header { height:80px; background-color: #04AA6E; border-bottom: 1px solid #dcdcdc; padding:20px 0}
+.header span { font-size: 20px; padding-left:20px; border-left: 1px solid #dadada; margin-left:20px; vertical-align: super; color:#fff }
+.header img { margin-top: -25px; display: inline-block }
+.footer { height: 50px; line-height: 50px; text-align: center; position: fixed; left: 0; bottom: 0; text-align: center; width: 100%; font-size: 14px; background-color: #f5f5f5 }
+.title{ font-size:22px; margin-bottom:20px; text-align:center;    color: #2cbb97;}

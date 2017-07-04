@@ -1,0 +1,446 @@
+[ 2017-06-07T09:20:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:44:13+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('客户需求发起','','','','2017-06-07 10:43:50','1','0','0','2017-06-07 10:44:13','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','177') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:44:14+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:44:30+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('项目需求沟通','','','','2017-06-07 10:44:14','1','0','0','2017-06-07 10:44:30','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0050s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','178') [ RunTime:0.0030s ]
+
+[ 2017-06-07T10:44:32+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:44:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('免费现场勘察','','','','2017-06-07 10:44:32','1','0','0','2017-06-07 10:44:57','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0090s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','179') [ RunTime:0.0030s ]
+
+[ 2017-06-07T10:44:59+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:45:14+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('免费方案设计','','','','2017-06-07 10:44:59','1','0','0','2017-06-07 10:45:14','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','180') [ RunTime:0.0060s ]
+
+[ 2017-06-07T10:45:14+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:45:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('客户方案确认','','','','2017-06-07 10:45:15','1','0','0','2017-06-07 10:45:27','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','181') [ RunTime:0.0040s ]
+
+[ 2017-06-07T10:45:29+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:45:40+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('签订施工合同','','','','2017-06-07 10:45:28','1','0','0','2017-06-07 10:45:40','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','182') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:45:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:46:08+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('依约开展施工','','','','2017-06-07 10:45:41','1','0','0','2017-06-07 10:46:08','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0040s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','183') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:46:08+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:46:25+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('企业自检排查','','','','2017-06-07 10:46:09','1','0','0','2017-06-07 10:46:25','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0080s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','184') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:46:27+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:46:44+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0760s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('客户检验验收','','','','2017-06-07 10:46:26','1','0','0','2017-06-07 10:46:44','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','185') [ RunTime:0.0030s ]
+
+[ 2017-06-07T10:46:45+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:46:58+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('客户操作培训','','','','2017-06-07 10:46:45','1','0','0','2017-06-07 10:46:58','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','186') [ RunTime:0.0040s ]
+
+[ 2017-06-07T10:46:58+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:48:06+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=delete&id=170
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+SQL: UPDATE `wldk_posts` SET `post_status`='3' WHERE `id` = 170 [ RunTime:0.0050s ]
+
+[ 2017-06-07T10:54:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.006001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('机房建设','','','','2017-06-07 10:53:59','1','0','0','<p>机房是各类信息的中枢，机房工程必须保证网络和计算机等高级设备能长期而可靠地运行的工作环境。电子化基础设施的建设，很重要的一个环节就是部队机房的建设。机房工程不仅集建筑、电气、机电安装、装修装饰、网络构建等多个专业技术于一体，需要丰富的工程实施和管理经验。机房设计与施工的优劣直接关系到机房内整个信息系统是否能稳定可靠地运行，是否能保证各类信息通讯畅通无阻。</p>','2017-06-07 10:54:35','1','{\"thumb\":\"portal\\/20170607\\/59376ae81ff75.jpg\",\"template\":\"\"}') [ RunTime:0.0060s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('36','187') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:54:37+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:55:32+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('安防监控','','','','2017-06-07 10:54:53','1','0','0','<p>安防监控系统是应用光纤、同轴电缆或微波在其闭合的环路内传输视频信号，并从摄像到图像显示和记录构成独立完整的系统。它能实时、形象、真实地反映被监控对象，不但极大地延长了人眼的观察距离，而且扩大了人眼的机能，它可以在恶劣的环境下代替人工进行长时间监视，让人能够看到被监视现场的实际发生的一切情况，并通过录像机记录下来。同时报警系统设备对非法入侵进行报警，产生的报警信号输</p>','2017-06-07 10:55:32','1','{\"thumb\":\"portal\\/20170607\\/59376b20e29b6.jpg\",\"template\":\"\"}') [ RunTime:0.0040s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('36','188') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:55:34+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:56:33+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('多媒体','','','','2017-06-07 10:55:33','1','0','0','<p>多媒体：一词译自英文，而该词又是由mutiple和media复合而成的。媒体（medium）原有两重含义，一是指存储信息的实体，如磁盘、光盘、磁带、半导体存储器等，中文常译作媒质；二是指传递信息的载体，如数字、文字、声音、图形等，中文译作媒介。所以与多媒体对应的一词是单媒体（Monomedia），从字面上看，多媒体就是由单媒体复合而成的。<br/></p>','2017-06-07 10:56:33','1','{\"thumb\":\"portal\\/20170607\\/59376b5e6ffcd.jpg\",\"template\":\"\"}') [ RunTime:0.0050s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('36','189') [ RunTime:0.0020s ]
+
+[ 2017-06-07T10:56:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T10:57:56+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('酒店智能化','','','','2017-06-07 10:56:35','1','0','0','<p>随着科技的发展、节能环保形势的严峻、客人的消费舒适度概念的提升、酒店管理意识的提高，酒店智能化已经成为日益热门的话题。<br/>如何让酒店能耗降低低碳环保？<br/>如何能提高酒店整体的智能化水平，给客人科技及人性化的体验？<br/>如何提高酒店的综合管理水平，提高员工工作效率，减少人员配置？<br/>&nbsp;如何让各个智能系统紧密互联，协调工作</p>','2017-06-07 10:57:56','1','{\"thumb\":\"portal\\/20170607\\/59376bb0b6f60.jpg\",\"template\":\"\"}') [ RunTime:0.0040s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('36','190') [ RunTime:0.0050s ]
+
+[ 2017-06-07T10:57:56+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T11:00:09+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('公共广播系统','','','','2017-06-07 10:57:57','1','0','0','<p>公共广播系统是一项系统工程，它需要电子技术、电声技术、建声技术和声学艺术等多种学科的密切配合，公共广播系统的音响效果不仅与电声系统的综合性能有关，还与声音的传播环境建筑声学和现场调音使用密切相关，所以公共广播系统最终效果需要正确合理的电声系统设计和调试、良好的声音传播条件和正确的现场调音技术三者最佳的配合，三者相辅相成缺一不可</p>','2017-06-07 11:00:09','1','{\"thumb\":\"portal\\/20170607\\/59376c3716ba4.jpg\",\"template\":\"\"}') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('36','191') [ RunTime:0.0020s ]
+
+[ 2017-06-07T11:00:11+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T11:01:02+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` NOT IN ('36') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` = '36' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 153 AND `term_id` = '36' [ RunTime:0.0020s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='综合布线',`post_keywords`='综合布线',`post_source`='综合布线',`post_excerpt`='综合布线',`post_date`='2017-06-06 10:35:45',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>综合布线是一种模块化的、灵活性极高的建筑物内或建筑群之间的信息传输通道。通过它可使话音设备、数据设备、交换设备及各种控制设备与信息管理系统连接起来，同时也使这些设备与外部通信网络相连的综合布线。它还包括建筑物外部网络或电信线路的连接点与应用系统设备之间的所有线缆及相关的连接部件。综合布线由不同系列和规格的部件组成，其中包括：传输介质、相关连接硬件(如配线架</p>',`post_modified`='2017-06-07 11:01:02',`smeta`='{\"thumb\":\"portal\\/20170607\\/59376c6bdcbb0.jpg\",\"template\":\"\"}' WHERE `id` = '153' [ RunTime:0.0030s ]
+
+[ 2017-06-07T11:01:03+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T11:02:34+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('防盗报警系统','','','','2017-06-07 11:01:10','1','0','0','<p>防盗报警系统是用物理方法或电子技术，自动探测发生在布防监测区域内的侵入行为，产生报警 信号，并提示值班人员发生报警的区域部位，显示可能采取对策的系统。防盗报警系统是预防抢劫、盗窃等意外事件的重要设施。一旦发生突发事件，就能通过声光报警信号在安保控制中心准确显示出事地点，使于迅速采取应急措施。防盗报警系统与出入口控制系统、闭路电视监控系统、访客对讲系统和电子巡更系统</p>','2017-06-07 11:02:34','1','{\"thumb\":\"portal\\/20170607\\/59376cc6b0d53.jpg\",\"template\":\"\"}') [ RunTime:0.0060s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('42','192') [ RunTime:0.0280s ]
+
+[ 2017-06-07T11:02:34+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-07T11:19:51+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 191 AND `term_id` NOT IN ('36') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 191 AND `term_id` = '36' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 191 AND `term_id` = '36' [ RunTime:0.0020s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='广播系统',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:57:57',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>公共广播系统是一项系统工程，它需要电子技术、电声技术、建声技术和声学艺术等多种学科的密切配合，公共广播系统的音响效果不仅与电声系统的综合性能有关，还与声音的传播环境建筑声学和现场调音使用密切相关，所以公共广播系统最终效果需要正确合理的电声系统设计和调试、良好的声音传播条件和正确的现场调音技术三者最佳的配合，三者相辅相成缺一不可</p>',`post_modified`='2017-06-07 11:19:51',`smeta`='{\"thumb\":\"portal\\/20170607\\/59376c3716ba4.jpg\",\"template\":\"\"}' WHERE `id` = '191' [ RunTime:0.0030s ]
+
+[ 2017-06-07T11:21:05+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 175 AND `term_id` NOT IN ('46') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 175 AND `term_id` = '46' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 175 AND `term_id` = '46' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='正在更新中......',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 17:58:23',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-07 11:21:05',`smeta`='{\"thumb\":\"\",\"template\":\"\"}',`post_content`='' WHERE `id` = '175' [ RunTime:0.0030s ]
+
+[ 2017-06-07T11:23:36+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('2014年12五小数字化建设：网络、监控、录课教室、多媒体讲台','','','','2017-06-07 11:22:58','1','0','0','2017-06-07 11:23:36','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('42','193') [ RunTime:0.0020s ]
+
+[ 2017-06-07T11:24:00+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('2015年3 一小三中机房改造','','','','2017-06-07 11:23:37','1','0','0','2017-06-07 11:24:00','1','{\"thumb\":\"\",\"template\":\"\"}','') [ RunTime:0.0030s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('42','194') [ RunTime:0.0050s ]
+

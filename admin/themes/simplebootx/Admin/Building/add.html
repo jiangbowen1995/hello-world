@@ -1,0 +1,64 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Building/index')}">居民楼列表</a></li>
+			<li class="active"><a href="{:U('Building/add')}">居民楼添加</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Building/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">楼号:</label>
+					<div class="controls">
+						<input type="text" name="num" style="width:50px"> 号楼
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">单元数:</label>
+					<div class="controls">
+						<input type="text" name="unit" value="6">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">层数:</label>
+					<div class="controls">
+						<input type="text" name="floor" value="6">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">一层几户:</label>
+					<div class="controls">
+						<input type="text" name="hcount" value="2">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">坐标:</label>
+					<div class="controls">
+						横坐标：<input type="text" name="lng" style="width:30px">
+						<span class="form-required">*</span>
+						纵坐标：<input type="text" name="lat" style="width:30px">
+						<span class="form-required">*</span>
+						<a href="{:U('Building/addmouse')}" target="_blank">选择位置</a>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">备注:</label>
+					<div class="controls">
+						<textarea name="remark" rows="5" cols="57" style="width: 500px;"></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

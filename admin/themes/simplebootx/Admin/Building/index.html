@@ -1,0 +1,89 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Building/index')}">居民楼列表</a></li>
+			<li><a href="{:U('Building/add')}">居民楼添加</a></li>
+		</ul>
+		<form class="well form-search" method="post" action="{:U('Building/index')}">
+			楼号：
+			<input type="text" name="num" value="{:I('request.num/s','')}" style="width: 50px;">
+			单元数：
+			<input type="text" name="unit" value="{:I('request.unit/s','')}" style="width: 50px;">
+			层数：
+			<input type="text" name="floor" value="{:I('request.floor/s','')}" style="width: 50px;">
+			<input type="submit" class="btn btn-primary" value="搜索" />
+			<a class="btn btn-danger" href="{:U('Building/index')}">清空</a>
+		</form>
+		<form class="js-ajax-form" action="" method="post">
+			<div class="table-actions">
+				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Building/delete')}" data-subcheck="true" data-msg="您确定删除吗？">批量{:L('DELETE')}</button>
+				<a href="{:U('Building/shanchu')}" class="btn btn-small btn-primary">已删除的信息</a>
+			</div>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th width="50">ID</th>
+						<th>楼号</th>
+						<th width="50">单元数</th>
+						<th width="50">层数</th>
+						<th width="50">坐标</th>
+						<th width="70">{:L('ACTIONS')}</th>
+					</tr>
+				</thead>
+				<foreach name="buildings" item="vo">
+				<tr>
+					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.id}" title="ID:{$vo.id}"></td>
+                    <td>{$vo.id}</td>
+					<td>{$vo.num}号楼</td>
+					<td>{$vo.unit}</td>
+					<td>{$vo.floor}</td>
+					<td>{$vo.lng},{$vo.lat}</td>
+					<td>
+						<a href="{:U('Building/edit',array('id'=>$vo['id']))}">{:L('EDIT')}</a> | 
+						<a href="{:U('Building/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+					</td>
+				</tr>
+				</foreach>
+				<tfoot>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<th width="50">ID</th>
+						<th>楼号</th>
+						<th width="50">单元数</th>
+						<th width="50">层数</th>
+						<th width="50">坐标</th>
+						<th width="70">{:L('ACTIONS')}</th>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="table-actions">
+				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Building/delete')}" data-subcheck="true" data-msg="您确定删除吗？">批量{:L('DELETE')}</button>
+			</div>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+		$(document).ready(function() {
+			Wind.css('treeTable');
+			Wind.use('treeTable', function() {
+				$("#menus-table").treeTable({
+					indent : 20
+				});
+			});
+		});
+
+		setInterval(function() {
+			var refersh_time = getCookie('refersh_time_admin_menu_index');
+			if (refersh_time == 1) {
+				reloadPage(window);
+			}
+		}, 1000);
+		setCookie('refersh_time_admin_menu_index', 0);
+		
+	</script>
+</body>
+</html>

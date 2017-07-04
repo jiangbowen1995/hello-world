@@ -1,0 +1,120 @@
+<extends name="Public:layout" />
+<div class="wrap-aotu">
+	<div class="flexslider">
+		<ul>
+			<li>
+				<a href="#" title="专业技术公司"><img src="{:sp_get_image_preview_url($img)}" alt="专业技术公司" style="width:100%;height:210px"/></a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="wrap clearfix contain">
+	<div class="bread-crumb">
+		<a href="/">首页</a>
+		<span>
+		>
+		</span>
+		<a href="/index.php/Jlhyhome/design/index/ce/term_id/va/36">设计方案</a>
+		>
+	</div>
+	
+	<div class="main right">
+		<div class="catelog">
+		<foreach name="posts" item="vo">
+			<div class="item clearfix">
+				<div class="left cate-name" >
+					<div class="left text" style="padding:0px;height:130px">
+						<a href="/index.php/Jlhyhome/design/show/id/{$vo['id']}">{$vo['post_title']}</a>
+					</div>
+					<dir class="right img"><a href="/index.php/Jlhyhome/design/show/id/{$vo['id']}"><img src="{:sp_get_image_preview_url($vo['arr']['thumb'])}" style="width:143px;height:130px" class="sheji"/></a></dir>
+				</div>
+				<div class="right tabs">
+					<div class="head clearfix">
+						<ul>
+							<li class="active">
+								<a href="/index.php/Jlhyhome/design/show/id/{$vo['id']}">简介</a>
+							</li>
+						</ul>
+					</div>
+					<div class="cons">
+						<div class="con1 con">
+							<p> {$vo['post_content']}
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</foreach>	
+		</div>
+	</div>
+	
+	<div class="side left">
+		<div class="box server-area">
+			<h3>
+				<a href="#">服务范围</a>
+			</h3>
+			<div class="body clearfix">
+				<ul>
+				<foreach name="poster" item="vo">
+					<li>
+						<a href="/index.php/Jlhyhome/design/show/id/{$vo['id']}">{$vo['post_title']}</a>
+					</li>
+				</foreach>
+				</ul>
+			</div>
+		</div>
+		<div class="box  text-list">
+			<h3>
+				<a href="/index.php/Jlhyhome/about/index/ce/term_id/va/44">联系我们</a>
+			</h3>
+			<div class="body">
+				<ul>
+					<li><span>工程热线：01089035921</span></li>
+					
+					<li><span>密云区行宫街</span></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <div class="page">
+                {$page}
+            </div> -->
+<script src="__TMPL__Public/work/script/jquery.js"></script>
+<script src="__TMPL__Public/work/script/jquery.easing.js"></script>
+<script src="__TMPL__Public/work/script/hoverIntent.js"></script>
+<script src="__TMPL__Public/work/script/superfish.js"></script>
+<script src="__TMPL__Public/work/script/jquery.kinMaxShow-1.1.min.js"></script>
+<script src="__TMPL__Public/work/script/jquery.kwicks.min.js"></script>
+<script src="__TMPL__Public/work/script/custom.js"></script>
+<script type="text/javascript">
+
+$().ready(function(e) {
+
+    $(".tabs .head ul li").each(function(i, e) {
+
+        $(e).mouseover(function(e1) {
+
+			$(e).addClass("active").siblings().removeClass("active");
+
+            $(".tabs .cons .con").eq(i).show().siblings().hide();
+
+        });
+
+    });
+
+});
+
+
+</script>
+<script>
+// var self = '{$self}';
+
+// $('.sheji').click(function(){
+// 	//alert(self);
+// 	location.href= "/index.php/Jlhyhome/design/show/name/99999";
+// })
+</script>
+</body>
+</html>

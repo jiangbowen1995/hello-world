@@ -1,0 +1,281 @@
+html,body{
+	background-color:#fff;
+	font-family:"Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+.hide{
+	display:none !important;
+}
+
+.signIn-wrap img{
+	display:block;
+}
+
+.header{
+	overflow:hidden;
+	width:1100px;
+	margin:0 auto;
+}
+.header a{
+	float:left;
+}
+.header .home-page{
+	    padding: 50px 26px 45px 0;
+    height: 55px;
+    font-size: 32px;
+    color: #003366;
+    font-weight: bold;
+}
+.header .weixin-company{
+	padding-top:72px;
+	width:113px;
+	height:34px;
+}
+.header p{
+	float:right;
+	padding-top:80px;
+	color:#3a3a3a;
+	font-size:14px;
+}
+.header span{
+	color:#ff6c00;
+	font-size:22px;
+}
+
+.main{
+	overflow:hidden;
+	background:url(/public/other/images/signIn_bg.jpg) no-repeat center;
+}
+.main .container{
+	width:1100px;
+	height:485px;
+	margin:0 auto;
+}
+.main .new-user{
+	float:left;
+	width:164px;
+	height:42px;
+	border-radius:4px;
+	margin:280px 0 0 25px;
+	line-height:42px;
+	background-color:#fff;
+	color:#ff9600;
+	font-size:17px;
+	text-align:center;
+	font-weight:bold;
+}
+.main .new-user:hover{
+	color:#ff7800;
+}
+.main .content{
+	float:right;
+	width:320px;
+	height:355px;
+	border-radius:4px;
+	margin:62px 30px 0 0;
+	background-color:#fcfcfc;
+	background-color:rgba(255,255,255,0.95);
+}
+.main .title{
+	overflow:hidden;
+	border-radius:4px 4px 0 0;
+}
+.main .title li{
+	float:left;
+}
+.main .title a{
+	display:block;
+	width:160px;
+	height:48px;
+	line-height:48px;
+	background-color:#e6e5e5;
+	color:#333;
+	font-size:15px;
+	text-align:center;
+}
+.main .title a:hover{
+	color:#666;
+}
+.main .selected a{
+	background-color:#fcfcfc;
+	background-color:transparent;
+}
+.main .error{
+	height:26px;
+	margin:5px 0;
+}
+.main .error li{
+	position:relative;
+	width:245px;
+	height:24px;
+	padding-left:25px;
+	border:1px solid #ff8080;
+	border-radius:4px;
+	margin:0 auto;
+	line-height:24px;
+	color:#e71e1e;
+	font-size:12px;
+}
+.main .error i{
+	position:absolute;
+	top:0;
+	left:0;
+	width:14px;
+	height:14px;
+	margin:5px 0 0 5.5px;
+	background:url(/public/other/images/signIn_img.png) no-repeat -13px 0;
+}
+.main .error li a{
+	color:#109ada;
+}
+.main .form-input{
+	overflow:hidden;
+	width:272px;
+	margin:0 auto 0;
+}
+.main .Acco,.main .password{
+	overflow:hidden;
+	border:1px solid #c4c4c4;
+	border-radius:4px;
+	margin-bottom:14px;
+	background-color:#fff;
+}
+.main .form-input i{
+	float:left;
+	display:block;
+	width:14px;
+	height:15px;
+	margin:11px 12px;
+	background:url(/public/other/images/signIn_img.png) no-repeat -27px 0;
+}
+.main .password i{
+	width:13px;
+	height:19px;
+	margin:9.5px 12.5px;
+	background-position:0 0;
+}
+.main .form-input input{
+	float:left;
+	width:227px;
+	height:38px;
+	padding:0 5px 0 0;
+	border-width:0px;
+	line-height:38px;
+	color:#333;
+	font-size:14px;
+	font-family:"Microsoft YaHei",tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+input[name="username"].phbg{
+	background:url(/public/other/images/signIn_img.png) no-repeat 0 -30px;
+}
+input[name="password"].phbg{
+	background:url(/public/other/images/signIn_img.png) no-repeat 0 -68px;
+}
+::-moz-placeholder{color:#c4c4c4;}
+::-webkit-input-placeholder{color:#c4c4c4;}
+:-ms-input-placeholder{color:#c4c4c4;}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.main input.error{
+	border-color:#ff8080;
+}
+.main .code{
+	overflow:hidden;
+}
+.main .code input{
+	float:left;
+	width:116px;
+	padding:0 10px;
+	border:1px solid #c4c4c4;
+	border-radius:4px;
+	margin:0;
+	background-color:#fff;
+}
+.main .code img{
+	float:left;
+	width:124px;
+	height:40px;
+	padding:0 5px;
+}
+.main .code a{
+	float:left;
+	width:40px;
+	height:40px;
+	line-height:20px;
+	color:#86918d;
+	font-size:12px;
+}
+.main .wxContent{
+	text-align:center;
+}
+.main .wxContent img{
+	width:164px;
+	height:163px;
+	margin:35px auto 25px;
+}
+.main .wxContent a{
+	color:#2abb97;
+	font-size:16px;
+}
+.main .wxContent a:hover{
+	text-decoration:underline;
+}
+.main .wxContent span{
+	display:block;
+	padding-top:25px;
+	color:#808080;
+	font-size:14px;
+}
+.main .remember{
+	overflow:hidden;
+	display:inline-block;
+	margin-left:24px;
+}
+.main .remember-btn{
+	float:left;
+	width:15px;
+	height:15px;
+	margin:3px 8px 0 0;
+	background:url(/public/other/images/signIn_img.png) no-repeat -41px 0;
+	cursor:pointer;
+}
+.main .remember-btn+span{
+	float:left;
+    color:#808080;
+    font-size:14px;
+    cursor:pointer;
+}
+.main .active .remember-btn{
+	background-position:-41px -15px;
+}
+.main .signIn{
+	display:block;
+	width:270px;
+	height:38px;
+	border-radius:5px;
+	margin:8px auto;
+	line-height:38px;
+	background-color:#2abb97;
+	color:#fff;
+	font-size:15px;
+	text-align:center;
+}
+.main .signIn+div{
+	overflow:hidden;
+}
+.main .forget{
+	float:right;
+	margin:0 24px 0 0;
+	color:#808080;
+	font-size:14px;
+}
+.main .forget:hover{
+	color:#2abb97;
+}
+
+.footer{
+	padding-top:150px;
+	color:#666;
+	font-size:13px;
+	text-align:center;
+}

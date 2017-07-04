@@ -1,0 +1,476 @@
+[ 2017-06-16T15:47:04+08:00 ] ::1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0350s ]
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_content`,`post_modified`,`post_author`,`smeta`) VALUES ('公司描述','','','','2017-06-16 15:46:19','1','0','0','<h2 style=\"margin: 0px 0px 15px; padding: 25px 0px; font-weight: normal; font-size: 18px; white-space: normal; font-family: Simsun; line-height: normal; widows: 1;\">公司简介</h2><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: 微软雅黑; font-size: 15px; white-space: normal;\">北京建龙浩宇科技有限公司于2010年成立于风景秀丽的北京密云，是一家专业从事安防的公司。主要经营业务包括安防监控、门禁考勤、一卡通、机房建设、网络综合布线、多媒体会议、教室、公共广播、智能数字化等工程的设计、系统产品提供、工程项目施工、管理、培训、售后等服务的高新技术企业。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>公司自成立以来一直坚持以人为本、全面创新、精准求实、共创互赢的核心价值观和诚信经营、和谐统一的经营管理理念。在核心业务和资源规模不断扩展的同时，实施横向一体化的经营策略，以延伸企业价值链，优化经营发展渠道，紧抓人才梯队培养建设，为公司多系统集成发展奠定了成本、渠道、技术等基础。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>公司与众多业内知名品牌企业建立了良好的合作关系，相互依存、共同发展。凭借强大的合作网络、领先的技术、丰富的行业应用经验、专业规范的服务与现代化的市场管理理念，保障我们能够以最快的速度向客户提供最高效能的工程设备产品和以客户需求为导向的行业解决方案，为客户提高竞争优势，带来最大化的效益，实现精彩双赢！<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>公司从成立至今，一直注重自身项目队伍的建设，坚持“不拘一格求人才，内部培养，外部引进，鼓励引荐，求贤若渴”的人才战略。针对客户项目做到仔细深入探查，详细施工方案、流程设计，严格遵守国家工程标准，努力实现成本、质量、实用等多方面的共赢局面，处处力求完美，努力做到“做一个工程，树一个口碑”。在多年的运营发展中，公司聚集了一批技术精、作风硬的高级工程技术人员，并积累了大量的工程设计和施工经验；树立起高技术、高品质、高服务标准的现代企业形象。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>我公司深知“细节决定成败”的道理，公司一直在后期服务上有很大力度，再加上公司丰富的技术经验和先进的服务理念一直向客户提供便捷、有效的技术支持和保障。 公司一直秉承“诚信经营、和谐统一”的经营理念，与客户保持长期良好的互赢关系，逐步形成了“服务客户，赢得客户”的业务模式。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>展望未来，我们的愿景是“让天下人都享受到高科技带来的快乐！”我们将继续奉行“厚积薄发、脚踏实地、志存高远”的理念，为客户提供专业的技术和优质的服务。</p><p><br/></p>','2017-06-16 15:47:04','1','{\"thumb\":\"\",\"template\":\"\"}') [ RunTime:0.0410s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('35','196') [ RunTime:0.0120s ]
+
+[ 2017-06-16T16:17:38+08:00 ] ::1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0110s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 196 AND `term_id` NOT IN ('35') [ RunTime:0.0230s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 196 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0160s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 196 AND `term_id` = '35' [ RunTime:0.0150s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='公司描述',`post_keywords`='公司描述',`post_source`='',`post_excerpt`='',`post_date`='2017-06-16 15:46:19',`istop`='0',`recommended`='0',`post_content`='<h2 style=\"margin: 0px 0px 15px; padding: 25px 0px; font-weight: normal; font-size: 18px; white-space: normal; font-family: Simsun; line-height: normal; widows: 1;\">公司简介</h2><p style=\"margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: 微软雅黑; font-size: 15px; white-space: normal;\">北京建龙浩宇科技有限公司于2010年成立于风景秀丽的北京密云，是一家专业从事安防的公司。主要经营业务包括安防监控、门禁考勤、一卡通、机房建设、网络综合布线、多媒体会议、教室、公共广播、智能数字化等工程的设计、系统产品提供、工程项目施工、管理、培训、售后等服务的高新技术企业。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>公司自成立以来一直坚持以人为本、全面创新、精准求实、共创互赢的核心价值观和诚信经营、和谐统一的经营管理理念。在核心业务和资源规模不断扩展的同时，实施横向一体化的经营策略，以延伸企业价值链，优化经营发展渠道，紧抓人才梯队培养建设，为公司多系统集成发展奠定了成本、渠道、技术等基础。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>公司与众多业内知名品牌企业建立了良好的合作关系，相互依存、共同发展。凭借强大的合作网络、领先的技术、丰富的行业应用经验、专业规范的服务与现代化的市场管理理念，保障我们能够以最快的速度向客户提供最高效能的工程设备产品和以客户需求为导向的行业解决方案，为客户提高竞争优势，带来最大化的效益，实现精彩双赢！<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>公司从成立至今，一直注重自身项目队伍的建设，坚持“不拘一格求人才，内部培养，外部引进，鼓励引荐，求贤若渴”的人才战略。针对客户项目做到仔细深入探查，详细施工方案、流程设计，严格遵守国家工程标准，努力实现成本、质量、实用等多方面的共赢局面，处处力求完美，努力做到“做一个工程，树一个口碑”。在多年的运营发展中，公司聚集了一批技术精、作风硬的高级工程技术人员，并积累了大量的工程设计和施工经验；树立起高技术、高品质、高服务标准的现代企业形象。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>我公司深知“细节决定成败”的道理，公司一直在后期服务上有很大力度，再加上公司丰富的技术经验和先进的服务理念一直向客户提供便捷、有效的技术支持和保障。 公司一直秉承“诚信经营、和谐统一”的经营理念，与客户保持长期良好的互赢关系，逐步形成了“服务客户，赢得客户”的业务模式。<br style=\"margin: 0px; padding: 0px;\"/><br style=\"margin: 0px; padding: 0px;\"/>展望未来，我们的愿景是“让天下人都享受到高科技带来的快乐！”我们将继续奉行“厚积薄发、脚踏实地、志存高远”的理念，为客户提供专业的技术和优质的服务。</p><p><br/></p>',`post_modified`='2017-06-16 16:17:38',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '196' [ RunTime:0.0190s ]
+
+[ 2017-06-16T17:04:26+08:00 ] ::1 /index.php?g=Portal&m=AdminPage&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\PostsModel
+
+[ 2017-06-16T21:56:06+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002451s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004849s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002692s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002766s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 194 AND `term_id` NOT IN ('42') [ RunTime:0.1537s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 194 AND `term_id` = '42' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 194 AND `term_id` = '42' [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='2015年3 一小三中机房改造',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 11:23:37',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>',`post_modified`='2017-06-16 21:56:06',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '194' [ RunTime:0.0391s ]
+
+[ 2017-06-16T21:59:06+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001941s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004411s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002462s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002583s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 193 AND `term_id` NOT IN ('42') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 193 AND `term_id` = '42' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 193 AND `term_id` = '42' [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='2014年12五小数字化建设：网络、监控、录课教室、多媒体讲台',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 11:22:58',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>ppppppppppppppppppppp</p>',`post_modified`='2017-06-16 21:59:06',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '193' [ RunTime:0.0873s ]
+
+[ 2017-06-16T22:11:41+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001845s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003707s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002350s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002423s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 186 AND `term_id` NOT IN ('43') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 186 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 186 AND `term_id` = '43' [ RunTime:0.0007s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='客户操作培训',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:46:45',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>操作须知............................................1</p>',`post_modified`='2017-06-16 22:11:41',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '186' [ RunTime:0.0373s ]
+
+[ 2017-06-16T22:12:00+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001929s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003909s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002603s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002692s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0010s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 185 AND `term_id` NOT IN ('43') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 185 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 185 AND `term_id` = '43' [ RunTime:0.0003s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='客户检验验收',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:46:26',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>客户检验验收</p>',`post_modified`='2017-06-16 22:12:00',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '185' [ RunTime:0.0282s ]
+
+[ 2017-06-16T22:12:09+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001885s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004051s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002698s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002785s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 184 AND `term_id` NOT IN ('43') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 184 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 184 AND `term_id` = '43' [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='企业自检排查',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:46:09',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>企业自检排查</p>',`post_modified`='2017-06-16 22:12:09',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '184' [ RunTime:0.0848s ]
+
+[ 2017-06-16T22:12:21+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001960s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003997s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003079s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003164s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 184 AND `term_id` NOT IN ('43') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 184 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 184 AND `term_id` = '43' [ RunTime:0.0006s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='企业自检排查',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:46:09',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>企业自检排查</p>',`post_modified`='2017-06-16 22:12:21',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '184' [ RunTime:0.1022s ]
+
+[ 2017-06-16T22:12:32+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001823s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004006s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002558s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002640s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 183 AND `term_id` NOT IN ('43') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 183 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 183 AND `term_id` = '43' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='依约开展施工',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:45:41',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>依约开展施工</p>',`post_modified`='2017-06-16 22:12:32',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '183' [ RunTime:0.0894s ]
+
+[ 2017-06-16T22:12:44+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001990s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004286s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002575s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002672s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 181 AND `term_id` NOT IN ('43') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 181 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 181 AND `term_id` = '43' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='客户方案确认',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:45:15',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>客户方案确认</p>',`post_modified`='2017-06-16 22:12:44',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '181' [ RunTime:0.1650s ]
+
+[ 2017-06-16T22:12:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001827s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003749s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002519s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002595s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0012s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 182 AND `term_id` NOT IN ('43') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 182 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 182 AND `term_id` = '43' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='签订施工合同',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:45:28',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>签订施工合同</p>',`post_modified`='2017-06-16 22:12:57',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '182' [ RunTime:0.0754s ]
+
+[ 2017-06-16T22:13:06+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002088s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004760s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002647s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002780s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 181 AND `term_id` NOT IN ('43') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 181 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 181 AND `term_id` = '43' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='客户方案确认',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:45:15',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>客户方案确认</p>',`post_modified`='2017-06-16 22:13:06',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '181' [ RunTime:0.0825s ]
+
+[ 2017-06-16T22:13:17+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001847s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003815s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002301s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002376s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0007s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 177 AND `term_id` NOT IN ('43') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 177 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 177 AND `term_id` = '43' [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='客户需求发起',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 10:43:50',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>客户需求发起</p>',`post_modified`='2017-06-16 22:13:17',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '177' [ RunTime:0.0843s ]
+
+[ 2017-06-16T22:24:03+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001750s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003659s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002965s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003042s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 176 AND `term_id` NOT IN ('46') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 176 AND `term_id` = '46' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 176 AND `term_id` = '46' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='建龙浩宇科技有限公司',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-07 08:35:37',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>会议召开中........请勿打扰</p>',`post_modified`='2017-06-16 22:24:03',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '176' [ RunTime:0.0808s ]
+
+[ 2017-06-16T22:24:28+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001785s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004324s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002449s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002530s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 175 AND `term_id` NOT IN ('46') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 175 AND `term_id` = '46' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 175 AND `term_id` = '46' [ RunTime:0.0003s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='正在更新中......',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 17:58:23',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>我们会努力的......</p>',`post_modified`='2017-06-16 22:24:28',`smeta`='{\"thumb\":\"\",\"template\":\"\"}' WHERE `id` = '175' [ RunTime:0.0765s ]
+
+[ 2017-06-16T22:44:12+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001923s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004598s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002903s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002985s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` NOT IN ('36') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` = '36' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 153 AND `term_id` = '36' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='综合布线',`post_keywords`='综合布线',`post_source`='综合布线',`post_excerpt`='综合布线',`post_date`='2017-06-06 10:35:45',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>综合布线是一种模块化的、灵活性极高的建筑物内或建筑群之间的信息传输通道。通过它可使话音设备、数据设备、交换设备及各种控制设备与信息管理系统连接起来，同时也使这些设备与外部通信网络相连的综合布线。它还包括建筑物外部网络或电信线路的连接点与应用系统设备之间的所有线缆及相关的连接部件。综合布线由不同系列和规格的部件组成，其中包括：传输介质、相关连接硬件(如配线架</p>',`post_modified`='2017-06-16 22:44:12',`smeta`='{\"thumb\":\"portal\\/20170607\\/59376c6bdcbb0.jpg\",\"template\":\"\"}' WHERE `id` = '153' [ RunTime:0.1046s ]
+
+[ 2017-06-16T22:44:15+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001900s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003898s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002601s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002681s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0012s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` NOT IN ('36') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` = '36' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 153 AND `term_id` = '36' [ RunTime:0.0006s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='综合布线',`post_keywords`='综合布线',`post_source`='综合布线',`post_excerpt`='综合布线',`post_date`='2017-06-06 10:35:45',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>综合布线是一种模块化的、灵活性极高的建筑物内或建筑群之间的信息传输通道。通过它可使话音设备、数据设备、交换设备及各种控制设备与信息管理系统连接起来，同时也使这些设备与外部通信网络相连的综合布线。它还包括建筑物外部网络或电信线路的连接点与应用系统设备之间的所有线缆及相关的连接部件。综合布线由不同系列和规格的部件组成，其中包括：传输介质、相关连接硬件(如配线架</p>',`post_modified`='2017-06-16 22:44:15',`smeta`='{\"thumb\":\"portal\\/20170607\\/59376c6bdcbb0.jpg\",\"template\":\"\"}' WHERE `id` = '153' [ RunTime:0.1199s ]
+
+[ 2017-06-16T22:44:43+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002900s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006147s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002798s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002884s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 160 AND `term_id` NOT IN ('35') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 160 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 160 AND `term_id` = '35' [ RunTime:0.0006s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='机房建设',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:32:16',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">机房是各类信息的中枢，机房工程必须保证网络和计算机等高级设备能长期而可靠地运行的工作环境。电子化基础设施的建设，很重要的一个环节就是部队机房的建设。机房工程不仅集建筑、电气、机电安装、装修装饰、网络构建等多个专业技术于一体，需要丰富的工程实施和管理经验。机房设计与施工的优劣直接关系到机房内整个信息系统是否能稳定可靠地运行，是否能保证各类信息通讯畅通无阻。</span></p>',`post_modified`='2017-06-16 22:44:43',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3fc20759.jpg\",\"template\":\"\"}' WHERE `id` = '160' [ RunTime:0.0312s ]
+
+[ 2017-06-16T22:45:33+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002115s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004156s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002997s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003119s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` NOT IN ('36') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 153 AND `term_id` = '36' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 153 AND `term_id` = '36' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='综合布线',`post_keywords`='综合布线',`post_source`='综合布线',`post_excerpt`='综合布线',`post_date`='2017-06-06 10:35:45',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>综合布线是一种模块化的、灵活性极高的建筑物内或建筑群之间的信息传输通道。通过它可使话音设备、数据设备、交换设备及各种控制设备与信息管理系统连接起来，同时也使这些设备与外部通信网络相连的综合布线。它还包括建筑物外部网络或电信线路的连接点与应用系统设备之间的所有线缆及相关的连接部件。综合布线由不同系列和规格的部件组成，其中包括：传输介质、相关连接硬件(如配线架</p>',`post_modified`='2017-06-16 22:45:33',`smeta`='{\"thumb\":\"portal\\/20170607\\/59376c6bdcbb0.jpg\",\"template\":\"\"}' WHERE `id` = '153' [ RunTime:0.1816s ]
+
+[ 2017-06-16T22:46:00+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002008s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003905s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002600s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002693s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0007s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 161 AND `term_id` NOT IN ('35') [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 161 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 161 AND `term_id` = '35' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='广播系统',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:33:21',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">公共广播系统是一项系统工程，它需要电子技术、电声技术、建声技术和声学艺术等多种学科的密切配合，公共广播系统的音响效果不仅与电声系统的综合性能有关，还与声音的传播环境建筑声学和现场调音使用密切相关，所以公共广播系统最终效果需要正确合理的电声系统设计和调试、良好的声音传播条件和正确的现场调音技术三者最佳的配合，三者相辅相成缺一不可</span></p>',`post_modified`='2017-06-16 22:46:00',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3e3d9aae.jpg\",\"template\":\"\"}' WHERE `id` = '161' [ RunTime:0.0804s ]
+
+[ 2017-06-16T22:46:23+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001803s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003782s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003011s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003098s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0007s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 162 AND `term_id` NOT IN ('35') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 162 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 162 AND `term_id` = '35' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='一卡通系统',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:34:01',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">一卡通信息管理系统本质上是一套由卡片、器具和上位管理软件所构成的特殊信息管理系统。其核心内容是利用卡片这种特定的物理媒介，实现从业务数据的生成、采集、传输到汇总分析的信息资源管理的规范化和自动化。同时企业一卡通作为企业信息化管理的一部分和企业的ERP系统、财务系统以及HR系统有着密不可分的联系。</span></p>',`post_modified`='2017-06-16 22:46:23',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3cbe645c.jpg\",\"template\":\"\"}' WHERE `id` = '162' [ RunTime:0.0913s ]
+
+[ 2017-06-16T22:46:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001089s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003150s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005829s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002480s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002558s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0012s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 165 AND `term_id` NOT IN ('35') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 165 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 165 AND `term_id` = '35' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='综合布线',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:35:50',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">综合布线是一种模块化的、灵活性极高的建筑物内或建筑群之间的信息传输通道。通过它可使话音设备、数据设备、交换设备及各种控制设备与信息管理系统连接起来，同时也使这些设备与外部通信网络相连的综合布线。它还包括建筑物外部网络或电信线路的连接点与应用系统设备之间的所有线缆及相关的连接部件。综合布线由不同系列和规格的部件组成，其中包括：传输介质、相关连接硬件(如配线架</span></p>',`post_modified`='2017-06-16 22:46:50',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c37747603.jpg\",\"template\":\"\"}' WHERE `id` = '165' [ RunTime:0.0351s ]
+
+[ 2017-06-16T22:47:11+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001872s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003814s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002478s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002590s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0010s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 166 AND `term_id` NOT IN ('35') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 166 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 166 AND `term_id` = '35' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='安防监控',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:36:43',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">安防监控系统是应用光纤、同轴电缆或微波在其闭合的环路内传输视频信号，并从摄像到图像显示和记录构成独立完整的系统。它能实时、形象、真实地反映被监控对象，不但极大地延长了人眼的观察距离，而且扩大了人眼的机能，它可以在恶劣的环境下代替人工进行长时间监视，让人能够看到被监视现场的实际发生的一切情况，并通过录像机记录下来。同时报警系统设备对非法入侵进行报警，产生的报警信号输</span></p>',`post_modified`='2017-06-16 22:47:11',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c34b867c5.jpg\",\"template\":\"\"}' WHERE `id` = '166' [ RunTime:0.0786s ]
+
+[ 2017-06-16T22:47:39+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001893s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003883s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002368s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002435s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 163 AND `term_id` NOT IN ('35') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 163 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 163 AND `term_id` = '35' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='酒店智能化',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:34:44',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">随着科技的发展、节能环保形势的严峻、客人的消费舒适度概念的提升、酒店管理意识的提高，酒店智能化已经成为日益热门的话题。</span><br style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; font-size: 14px; white-space: normal;\"/><span style=\"font-family: 微软雅黑; font-size: 14px;\">如何让酒店能耗降低低碳环保？</span><br style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; font-size: 14px; white-space: normal;\"/><span style=\"font-family: 微软雅黑; font-size: 14px;\">如何能提高酒店整体的智能化水平，给客人科技及人性化的体验？</span><br style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; font-size: 14px; white-space: normal;\"/><span style=\"font-family: 微软雅黑; font-size: 14px;\">如何提高酒店的综合管理水平，提高员工工作效率，减少人员配置？</span><br style=\"margin: 0px; padding: 0px; font-family: 微软雅黑; font-size: 14px; white-space: normal;\"/><span style=\"font-family: 微软雅黑; font-size: 14px;\">&nbsp;如何让各个智能系统紧密互联，协调工作</span></p>',`post_modified`='2017-06-16 22:47:39',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3aaa4dde.jpg\",\"template\":\"\"}' WHERE `id` = '163' [ RunTime:0.0865s ]
+
+[ 2017-06-16T22:47:58+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001672s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003954s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002985s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003074s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0009s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 164 AND `term_id` NOT IN ('35') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 164 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 164 AND `term_id` = '35' [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='多媒体工程',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:35:22',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p><span style=\"font-family: 微软雅黑; font-size: 14px;\">多媒体：一词译自英文，而该词又是由mutiple和media复合而成的。媒体（medium）原有两重含义，一是指存储信息的实体，如磁盘、光盘、磁带、半导体存储器等，中文常译作媒质；二是指传递信息的载体，如数字、文字、声音、图形等，中文译作媒介。所以与多媒体对应的一词是单媒体（Monomedia），从字面上看，多媒体就是由单媒体复合而成的。</span></p>',`post_modified`='2017-06-16 22:47:58',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c39323a1c.jpg\",\"template\":\"\"}' WHERE `id` = '164' [ RunTime:0.0357s ]
+

@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$title}</title>
+<meta name="keywords" content="弱电公司,系统集成公司,,弱电集成,系统集成">
+<meta name="description" content="北京建龙浩宇科技有限公司是一家专业科技公司；计算机系统服务；销售计算机、软件及辅助设备、电子产品、电子元件和器件、办公用文具、体育用品、办公用机械；计算机维修；企业管理咨询">
+<link href="__TMPL__Public/work/css/style.css" rel="stylesheet" type="text/css">
+<link href="__TMPL__Public/work/css/flexslider.css" rel="stylesheet" type="text/css">
+<!-- <link rel="stylesheet" href="__TMPL__Public/work/css/theme.min.css" type="text/css"> -->
+<style type="text/css">
+.jcarousel { position: relative; overflow: hidden; }
+.jcarousel ul { width: 20000em; position: relative; }
+.jcarousel li { float: left; text-align: center; }
+.navigation ul li a.in{
+	background: #666;
+}
+</style>
+</head>
+
+<body>
+<div class="wrap header clearfix">
+	<div class="left logo">
+		<h1>
+			<a href="/"><img src="__TMPL__Public/work/images/logo.jpg" alt=""></a>
+		</h1>
+	</div>
+	<div class="right top-menu">
+		<ul>
+			<li class="li1">
+				<a href="#">联系方式</a>
+			</li>
+			<li>
+				<a href="#">收藏我们</a>
+			</li>
+			<li>
+				<a href="#">设为首页</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="wrap-auto nav-search">
+	<div class="wrap">
+		<div class="navigation left">
+			<ul class="sf-menu" id="navigation">
+			<foreach name="res" item="vo">
+				<li class="home">
+					<a href="{$vo['href']}" class="<?php if($vo['href'] == '__SELF__' ||  $vo['href'] == $self)  echo 'in'?>">{$vo['label']}</a>
+
+				</li>
+			</foreach>
+			</ul>
+			
+		</div>
+	</div>
+</div>
+{__CONTENT__}
+<div class="wrap-aotu flink-foot">
+
+	<div class="wrap">
+		<div class="foot" >
+			<ul class="sf-menu" id="navigation" style="padding-left:100px">
+			<foreach name="res" item="vo">
+				<li class="home">
+					<a href="{$vo['href']}">{$vo['label']} &nbsp;&nbsp;&nbsp;</a>
+				</li>
+			</foreach>
+			</ul>
+			<br><div class="info" style="padding-left:-100px">{$title} 版权所有 电话:&nbsp;{$phone}（周一至周日 8：00 - 18：00） </div>
+		</div>
+	</div>
+
+</div>

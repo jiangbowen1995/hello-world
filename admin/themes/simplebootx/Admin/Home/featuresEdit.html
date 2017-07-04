@@ -1,0 +1,47 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+			<li class="active"><a>特征信息修改</a></li>
+		</ul>
+		<form method="post" class="form-horizontal " action="{:U('Home/featuresExecEdit')}"> 	
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">字段名称</label>
+					<div class="controls">
+						<input type="text" name="attname" value="{$list.attname}" required="required">
+						<input type="hidden" name="id" value="{$list.id}">
+						<span class="form-required">*</span>
+
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">字段值</label>
+					<div class="controls">
+						<input type="text" name="att" value="{$list.att}">
+						<span class="form-required">*</span>
+
+					</div>
+				</div>
+				
+				 <if condition=" ">
+				 <div class="control-group">
+					<div class="controls" style="margin-left: 120px;">
+
+						<foreach name="value" item="vo">
+							属&nbsp;&nbsp;性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="value[]"  value="{$vo}" style="height: 25px;""><br><br>
+						</foreach>
+					</div>
+				</div>
+
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('SAVE')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

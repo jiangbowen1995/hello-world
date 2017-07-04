@@ -1,0 +1,351 @@
+[ 2017-06-16T15:22:57+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] Ã◊Ω”◊÷≤Ÿ◊˜≥¢ ‘“ª∏ˆŒﬁ∑®¡¨Ω”µƒ÷˜ª˙°£
+
+
+[ 2017-06-16T15:22:58+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] Ã◊Ω”◊÷≤Ÿ◊˜≥¢ ‘“ª∏ˆŒﬁ∑®¡¨Ω”µƒ÷˜ª˙°£
+
+
+[ 2017-06-16T15:22:58+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] Ã◊Ω”◊÷≤Ÿ◊˜≥¢ ‘“ª∏ˆŒﬁ∑®¡¨Ω”µƒ÷˜ª˙°£
+
+
+[ 2017-06-16T15:23:02+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] Ã◊Ω”◊÷≤Ÿ◊˜≥¢ ‘“ª∏ˆŒﬁ∑®¡¨Ω”µƒ÷˜ª˙°£
+
+
+[ 2017-06-16T15:23:05+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] Ã◊Ω”◊÷≤Ÿ◊˜≥¢ ‘“ª∏ˆŒﬁ∑®¡¨Ω”µƒ÷˜ª˙°£
+
+
+[ 2017-06-16T15:26:50+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2017-06-16T15:26:52+08:00 ] ::1 /index.php?g=&&g=Admin&m=Index&a=index
+ERR: SQLSTATE[HY000] [2002] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£
+
+
+[ 2017-06-16T16:35:22+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.1230s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='‰∏ªÈ°µ',`target`='',`icon`='',`status`='1',`path`='0-73',`href`='/index.php/jlhyhome/index/index/ce=term_id/a=35' WHERE `id` = 73 [ RunTime:0.0080s ]
+
+[ 2017-06-16T16:36:34+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0990s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.ph/jlhyhome/design&a=index/ce=term_id/va=36' WHERE `id` = 71 [ RunTime:0.0030s ]
+
+[ 2017-06-16T16:37:08+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='Â∑•Á®ãÊ°à‰æã',`target`='',`icon`='',`status`='1',`path`='0-75',`href`='/index.php/Jlhyhome/project/index/ce=term_id/va=42' WHERE `id` = 75 [ RunTime:0.0130s ]
+
+[ 2017-06-16T16:37:47+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.ph/jlhyhome/design/index/ce=term_id/va=36' WHERE `id` = 71 [ RunTime:0.0050s ]
+
+[ 2017-06-16T16:38:06+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='Âêà‰ΩúÊµÅÁ®ã',`target`='',`icon`='',`status`='1',`path`='0-76',`href`='/index.php/Jlhyhome/cooperate/index/ce=term_id/va=43' WHERE `id` = 76 [ RunTime:0.0040s ]
+
+[ 2017-06-16T16:38:35+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ÂÖ≥‰∫éÊàë‰ª¨',`target`='',`icon`='',`status`='1',`path`='0-77',`href`='/index.php/Jlhyhome/about/index/ce=term_id/va=44' WHERE `id` = 77 [ RunTime:0.0070s ]
+
+[ 2017-06-16T16:39:03+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ÂÖ¨Âè∏Êñ∞Èóª',`target`='',`icon`='',`status`='1',`path`='0-79',`href`='/index.php/Jlhyhome/news/index/ce=term_id/va=46' WHERE `id` = 79 [ RunTime:0.0050s ]
+
+[ 2017-06-16T16:40:49+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.ph/jlhyhome/design/index/ce=term_id/va=36' WHERE `id` = 71 [ RunTime:0.0050s ]
+
+[ 2017-06-16T16:41:04+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.php/jlhyhome/design/index/ce=term_id/va=36' WHERE `id` = 71 [ RunTime:0.0050s ]
+
+[ 2017-06-16T16:43:27+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='index.php/jlhyhome/design/index/ce=term_id/va=36' WHERE `id` = 71 [ RunTime:0.0040s ]
+
+[ 2017-06-16T16:43:59+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='' WHERE `id` = 71 [ RunTime:0.0030s ]
+
+[ 2017-06-16T16:44:31+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.3230s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.php/jlhyhome/design/index/ce=term_id/va=36' WHERE `id` = 71 [ RunTime:0.0080s ]
+
+[ 2017-06-16T16:50:31+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='‰∏ªÈ°µ',`target`='',`icon`='',`status`='1',`path`='0-73',`href`='/index.php?g=jlhyhome&m=index&a=index&ce=term_id&va=35' WHERE `id` = 73 [ RunTime:0.0030s ]
+
+[ 2017-06-16T16:51:09+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.php?g=jlhyhome&m=design&a=index&ce=term_id&va=36' WHERE `id` = 71 [ RunTime:0.0030s ]
+
+[ 2017-06-16T16:51:31+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0430s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.1140s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='Â∑•Á®ãÊ°à‰æã',`target`='',`icon`='',`status`='1',`path`='0-75',`href`='/index.php?g=Jlhyhome&m=project&a=index&ce=term_id&va=42' WHERE `id` = 75 [ RunTime:0.0060s ]
+
+[ 2017-06-16T16:51:50+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='Âêà‰ΩúÊµÅÁ®ã',`target`='',`icon`='',`status`='1',`path`='0-76',`href`='/index.php?g=Jlhyhome&m=cooperate&a=index&ce=term_id&va=43' WHERE `id` = 76 [ RunTime:0.0090s ]
+
+[ 2017-06-16T16:52:17+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ÂÖ¨Âè∏Êñ∞Èóª',`target`='',`icon`='',`status`='1',`path`='0-79',`href`='/index.php?g=Jlhyhome&m=news&a=index&ce=term_id&va=46' WHERE `id` = 79 [ RunTime:0.0220s ]
+
+[ 2017-06-16T17:05:25+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='‰∏ªÈ°µ',`target`='',`icon`='',`status`='1',`path`='0-73',`href`='/index.php/jlhyhome/index/index/ce/term_id/va/35' WHERE `id` = 73 [ RunTime:0.0100s ]
+
+[ 2017-06-16T17:06:21+08:00 ] ::1 /index.php?g=Admin&m=nav&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_nav` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `wldk_nav_cat` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: validate D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1185 Ë°å.
+NOTIC: [8] Undefined index: auto D:\jlhy2\trunk\simplewind\Core\Library\Think\Model.class.php Á¨¨ 1128 Ë°å.
+SQL: UPDATE `wldk_nav` SET `cid`='1',`parentid`='0',`label`='ËÆæËÆ°ÊñπÊ°à',`target`='',`icon`='',`status`='1',`path`='0-71',`href`='/index.php/jlhyhome/design/index/ce/term_id/va/36' WHERE `id` = 71 [ RunTime:0.0050s ]
+

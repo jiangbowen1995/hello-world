@@ -1,0 +1,123 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		
+		<ul class="nav nav-tabs">
+		<a href="">住户编辑</a>
+		
+		</ul>
+		<form method="post" class="form-horizontal " action="{:U('Home/edit_post')}" >
+
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">楼号:</label>
+					<div class="controls">
+						<select name="building_id">
+							<foreach name="buildings" item="vo">
+							<option value="{$vo.id}" <if condition="$vo['id'] == $data['building_id']">selected</if>>{$vo.num}号楼</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">单元数:</label>
+					<div class="controls">
+						<select name="unit">
+							<for name="i" start="1" end="11">
+							<option value="{$i}" <if condition="$i == $data['unit']">selected</if>>{$i}单元</option>
+							</for>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">层数:</label>
+					<div class="controls">
+						<select name="floor">
+							<for name="i" start="1" end="10">
+							<option value="{$i}" <if condition="$i == $data['floor']">selected</if>>{$i}层</option>
+							</for>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">房间号:</label>
+					<div class="controls">
+						<input type="text" name="num" style="width:50px" value="{$data.num}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+					<div class="control-group" >
+					<label class="control-label">住户类型:</label>
+
+					<input type="hidden" name="homeType" value="{$type}">
+					<div class="controls" style="margin-top:6px;">
+					<if condition="($type eq 1)">
+						<a href="{:U(Home/add)}&homeType=2&id={$data.id}">
+						<if condition="($type eq 1)">
+							个人房
+						<else />
+							单位房
+						</if>
+					<else/>
+					<a href="{:U(Home/add)}&homeType=1&id={$data.id}">
+						<if condition="($type eq 1)">
+							个人房
+						<else />
+							单位房
+						</if>
+
+					</if>
+						</a>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">是否出租:</label>
+					<div class="controls">
+						<select name="type" style="width:80px">
+							<option value="0" <if condition="$data['type'] == '0'">selected</if>>否</option>
+							<option value="1" <if condition="$data['type'] == '1'">selected</if>>是</option>
+						</select> 
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">锁芯类型:</label>
+					<div class="controls">
+						<select name="suoxin" style="width:80px">
+							<option value="">请选择</option>
+							<option value="A" <if condition="$data['suoxin'] == 'A'">selected</if>>A类型</option>
+							<option value="B" <if condition="$data['suoxin'] == 'B'">selected</if>>B类型</option>
+							<option value="C" <if condition="$data['suoxin'] == 'C'">selected</if>>C类型</option>
+							
+						</select> 
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">其他:</label>
+					<div class="controls">
+						<foreach name = "att" item="vo">
+							<label class="flat-label"><input style="margin-top:-2px" name="flag[]" type="checkbox" value="{$vo.id}" <if condition="($vo.check == 1)">checked</if>>{$vo.attname}
+							</label>
+						</foreach>
+						<!-- <input name="fangdaochuang" type="checkbox" value="1" <if condition="$data['fangdaochuang'] == 1">checked</if>> 防盗窗
+						<input name="motuoche" type="checkbox" value="1" <if condition="$data['motuoche'] == 1">checked</if>> 摩托车
+						<input name="diandongche" type="checkbox" value="1" <if condition="$data['diandongche'] == 1">checked</if>> 电动车
+						<input name="daibuche" type="checkbox" value="1" <if condition="$data['daibuche'] == 1">checked</if>> 老年代步车 -->
+					</div>
+				</div>
+
+
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$data.id}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

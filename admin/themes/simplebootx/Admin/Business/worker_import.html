@@ -1,0 +1,28 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Business/worker')}">人员列表</a></li>
+			<li><a href="{:U('Business/worker_add')}">人员添加</a></li>
+			<li class="active"><a href="{:U('Business/worker_import')}">批量添加</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Business/worker_import_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">选择文件</label>
+					<div class="controls">
+						<input type="text" name="filename" id="filename" onClick="javascript:upload_one('批量添加','#filename','file');" readonly>
+						<span class="form-required">* <a href="/data/example_b.xlsx" target="_blank">模板下载</a></span>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

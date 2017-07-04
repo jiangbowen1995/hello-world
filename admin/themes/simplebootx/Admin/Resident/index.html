@@ -1,0 +1,190 @@
+<admintpl file="header" />
+</head>
+<body>
+<style type="text/css">
+.table-list{ min-width: 1950px }
+</style>
+	<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="{:U('Resident/index')}">居民列表</a></li>
+			<li><a href="{:U('Resident/add')}">居民添加</a></li>
+			<li><a href="{:U('Resident/featuresIndex')}">全部居民类型</a></li>
+			<li><a href="{:U('Resident/featuresAdd')}">添加居民类型</a></l>
+			<li><a href="{:U('Resident/import')}">批量添加</a></li>
+			<!--<li><a href="{:U('Resident/export')}">批量导出</a></li>-->
+		</ul>
+		<form class="well form-search" method="post" action="{:U('Resident/index')}">
+
+			<if condition="($isDel eq 1)">
+				<input type="hidden" name="isDel" value="0">
+		<else>
+			    <input type="hidden" name=" isDel" value="1">
+		</if>
+			楼号：
+			<input type="text" name="_num" value="{:I('request._num/s','')}" style="width: 50px;">
+			单元数：
+			<input type="text" name="unit" value="{:I('request.unit/s','')}" style="width: 50px;">
+			房间号：
+			<input type="text" name="num" value="{:I('request.num/s','')}" style="width: 50px;">
+			姓名：
+			<input type="text" name="xingming" value="{:I('request.xingming/s','')}" style="width: 100px;">
+			<select id="sel_menu2" class="form-control" style="width: 100px;" name="find">
+	         <!-- <optgroup label="系统设置"> -->
+	         	  <option value="2">模糊查找</option>
+	              <option value="1" <if condition="($find eq 1)"> selected="selected"</if>>精确查找</option>
+	             
+	         <!-- </optgroup> -->
+     	    </select>
+			<input type="submit" class="btn btn-primary" value="搜索" />
+			<a class="btn btn-danger" href="{:U('Resident/index')}">清空</a>
+		</form>
+		<form class="js-ajax-form" action="" method="post">
+			<div class="table-actions">
+				<if condition="($isDel eq 1 )">
+					<a class="btn btn-small btn-primary" href="{:U('Resident/index')}&isDel=0">全部信息</a>
+					<else />
+				<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Resident/delete')}" data-subcheck="true" data-msg="您确定删除吗？">批量{:L('DELETE')}</button>
+				<a class="btn btn-small btn-primary" href="{:U('Resident/index')}&isDel=1">已删除的信息</a>
+				<a class="btn btn-small btn-success" href="{:U('Resident/exportexcel')}">批量导出</a>
+				</if>
+				<!-- <button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Resident/delete')}" data-subcheck="true" data-msg="您确定删除吗？">批量{:L('DELETE')}</button>
+				<a class="btn btn-small btn-success" href="{:U('Resident/exportexcel')}">批量导出</a>
+
+				<if condition="($isDel eq 1)">
+				<a class="btn btn-small btn-primary" href="{:U('Resident/index')}&isDel=0">全部信息</a>
+				<else />
+				<a class="btn btn-small btn-primary" href="{:U('Resident/index')}&isDel=1">已删除的信息</a>
+				</if> -->
+			</div>
+			<table class="table table-hover table-bordered table-list">
+				<thead>
+					<tr>
+						<th width="15"><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<!--<th width="50">ID</th>-->
+						<th width="80">{:L('ACTIONS')}</th>
+						<th width="150">住址</th>
+						<th width="50">姓名</th>
+						<th width="50">曾用名</th>
+						<th width="20">性别</th>
+						<th width="50">民族</th>
+						<th width="50">电话</th>
+						<th width="70">出生日期</th>
+						<th width="265">户籍</th>
+						<th width="70">身份证</th>
+						<th width="100">住户类型</th>
+						<th width="80">户籍类型</th>
+						<th width="70">职业</th>
+						<th width="70">服务处所</th>
+						<th width="70">是否为房主</th>
+						<th width="70">车牌号码</th>
+						<th width="600">其他</th>
+						
+					</tr>
+				</thead>
+				
+				<volist name="residents" id="vo" key='i'>
+				<tr>
+					<td><input type="checkbox" class="js-check" data-yid="js-check-y" data-xid="js-check-x" name="ids[]" value="{$vo.id}" title="ID:{$vo.id}"></td>
+                    <!--<td>{$vo.id}</td>-->
+					<td>
+					<if condition="($isDel eq 1)">
+							<a href="">不可操作</a>
+					<else />
+							<a href="{:U('Resident/edit',array('id'=>$vo['id']))}">{:L('EDIT')}</a> | 
+							<a href="{:U('Resident/delete',array('id'=>$vo['id']))}" class="js-ajax-delete">{:L('DELETE')}</a>
+					</if>
+					</td>
+					<td>{$vo.building_num}号楼-{$vo.home_unit}单元-{$vo.home_num}</td>
+					<td>{$vo.xingming}</td>
+					<td>{$vo.cengyong}</td>
+					<td>{$vo.xingbie}</td>
+					<td>{$vo.minzu}</td>
+					<td>{$vo.dianhua}</td>
+					<td>{$vo.chusheng}</td>
+					<td>{$vo.huji}</td>
+					<td>{$vo.shenfenzheng}</td>
+					<td>
+					<if condition="($vo.changzhu eq 0)">
+							常住人口
+						<else />
+							外省市流动人口
+						</if>
+					</td>
+					<td>{$vo.fenli}</td>
+					<td>{$vo.zhiye}</td>
+					<td>{$vo.chusuo}</td>
+					<td> <if condition ="($vo.fangzhu eq 1)">是
+					<else />
+						否
+					</if>
+					</td>
+					<td>{$vo.chepai}</td>
+					<td>
+						<volist name="vo['flag']" id="sub"> 
+
+						<?php
+							for( $i =0;$i<count($att);$i++){
+								if ($att[$i]['id'] == $sub) {
+									echo "<a>".$att[$i]['attname']."</a>";
+								}
+							}
+						?>
+						&nbsp;&nbsp;
+						</volist>
+					</td>
+					
+				</volist> 
+				<tfoot>
+					<tr>
+						<th><label><input type="checkbox" class="js-check-all" data-direction="x" data-checklist="js-check-x"></label></th>
+						<!--<th width="50">ID</th>-->
+						<th width="70">{:L('ACTIONS')}</th>
+						<th>住址</th>
+						<th>姓名</th>
+						<th>曾用名</th>
+						<th>性别</th>
+						<th>民族</th>
+						<th>电话</th>
+						<th>出生日期</th>
+						<th>户籍</th>
+						<th>身份证</th>
+						<th>住户类型</th>
+						<th>户籍类型</th>
+						<th>职业</th>
+						<th>服务处所</th>
+						<th>是否为房主</th>
+						<th>车牌号码</th>
+						<th>其他</th>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="table-actions">
+				<if condition="($isDel eq 0 )">
+					<button class="btn btn-danger btn-small js-ajax-submit" type="submit" data-action="{:U('Resident/delete')}" data-subcheck="true" data-msg="您确定删除吗？">批量{:L('DELETE')}</button>
+				</if>
+
+			</div>
+			<div class="pagination">{$page}</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+		$(document).ready(function() {
+			Wind.css('treeTable');
+			Wind.use('treeTable', function() {
+				$("#menus-table").treeTable({
+					indent : 20
+				});
+			});
+		});
+
+		setInterval(function() {
+			var refersh_time = getCookie('refersh_time_admin_menu_index');
+			if (refersh_time == 1) {
+				reloadPage(window);
+			}
+		}, 1000);
+		setCookie('refersh_time_admin_menu_index', 0);
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs"><li ><a href="{:U('Home/index')}&homeType=1">个人房</a></li>
+			<li><a href="{:U('Home/index')}&homeType=2">单位房</a></li>
+			<li><a href="{:U('Home/add')}">住户添加</a></li>
+			<li class="active"><a href="{:U('Home/featuresIndex')}">住户特征</a></li>
+			<li><a href="{:U('Home/featuresAdd')}">添加住户特征</a></li>
+		</ul>
+	<form method="post" class="js-ajax-form" novalidate="novalidate">
+			<table class="table table-hover table-bordered">
+
+				<thead>
+					<tr>
+						<th>字段值</th>
+						<th>特征名</th>
+						<th>属性</th>
+						
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<foreach name="res" item="vo" > 
+					<tbody>
+						<tr>
+							<!-- <if condition="is_array($vo)">
+								<foreach name="vo" item="v">
+									<td>{$v.name}</td>
+									<td>{$v.features}</td>
+									<td>
+										<a href="{:U('features/delete')}&features={$v.name}">删除</a>|
+										<a href="{:U('features/edit')}&features={$v.name}&va=1" >修改</a>
+									</td>
+								</foreach>
+							<else /> -->
+							<!-- </if> -->
+							<td>{$vo.att}</td>
+							<td>{$vo.attname}</td>
+							<if condition="($vo.type eq 1) ">
+								<td>个人房</td>	
+							<else />
+								<td>单位房</td>
+							</if>	
+							<td><a class="js-ajax-delete" data-msg="确定删除它吗？" href="{:U('Home/featuresDelete')}&id={$vo.id}">{:L('DELETE')}</a>|
+								<a href="{:U('Home/featuresEdit')}&id={$vo.id}">修改</a>
+							</td>
+							
+							
+
+							
+					</tbody>
+				</foreach>	
+			</table>
+			<div class="pagination"></div>
+		</form>
+		</div>
+</body>

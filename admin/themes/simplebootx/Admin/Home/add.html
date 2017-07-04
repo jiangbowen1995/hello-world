@@ -1,0 +1,105 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap">
+	<ul class="nav nav-tabs">
+		<li ><a href="{:U('Home/index')}&homeType=1">个人房</a></li>
+		<li><a href="{:U('Home/index')}&homeType=2">单位房</a></li>
+		<li class="active"><a href="{:U('Home/add')}">住户添加</a></li>
+		<li><a href="{:U('Home/featuresIndex')}">住户特征</a></li>
+		<li><a href="{:U('Home/featuresAdd')}">添加住户特征</a></li>
+	</ul>
+	<form method="post" class="form-horizontal js-ajax-form" action="{:U('Home/add_post')}">
+	<!-- js-ajax-form  -->
+		<!-- -->
+		<fieldset>
+			<div class="control-group">
+				<label class="control-label">楼号:</label>
+				<div class="controls">
+					<select name="building_id">
+						<foreach name="buildings" item="vo">
+							<option value="{$vo.id}">{$vo.num}号楼</option>
+						</foreach>
+					</select>
+					<span class="form-required">*</span> </div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">单元数:</label>
+				<div class="controls">
+					<select name="unit">
+						<for name="i" start="1" end="11">
+							<option value="{$i}">{$i}单元</option>
+						</for>
+					</select>
+					<span class="form-required">*</span> </div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">层数:</label>
+				<div class="controls">
+					<select name="floor">
+						<for name="i" start="1" end="10">
+							<option value="{$i}">{$i}层</option>
+						</for>
+					</select>
+					<span class="form-required">*</span> </div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">房间号:</label>
+				<div class="controls">
+					<input type="text" name="num" style="width:50px" placeholder="601">
+					<span class="form-required">*</span> </div>
+			</div>
+			<div class="control-group">
+					<label class="control-label">是否出租:</label>
+					<div class="controls">
+						<select name="type" style="width:80px">
+							<option value="0">否</option>
+							<option value="1">是</option>
+						</select> 
+					</div>
+				</div>
+			<div class="control-group">
+				<div> </div>
+				<label class="control-label">锁芯类型:</label>
+				<div class="controls">
+					<select name="suoxin">
+						<option value="">请选择</option>
+						<option value="A">A类型</option>
+						<option value="B">B类型</option>
+						<option value="C">C类型</option>
+						
+					</select>
+				</div>
+			</div>
+			<div class="control-group" >
+				<label class="control-label">住户类型:</label>
+				<div class="controls" style="margin-top:6px;"> 
+					<a href="{:U(Home/add)}&type={$type}">
+					<if condition="($type eq 1)"> 个人房
+					 <else />
+						单位房
+					</if>
+					</a>
+				</div>
+			</div>
+			<input type="hidden" name="homeType" value="{$type}">
+			<div class="control-group">
+				
+				<label class="control-label">住户特征:</label>
+				<div class="controls">
+					<foreach name = "att" item="vo">
+						<label class="flat-label"><input name="flag[]" type="checkbox" value="{$vo.id}" style="margin-top:-2px">
+						{$vo.attname}
+						</label>
+						</foreach>
+				</div>
+			</div>
+		</fieldset>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+			<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a> </div>
+	</form>
+</div>
+<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

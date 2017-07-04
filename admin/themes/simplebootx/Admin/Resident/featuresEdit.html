@@ -1,0 +1,37 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs"><li >
+			<li class="active"><a href="{:U('Resident/featuresAdd')}">修改人员类型</a></l>
+		</ul>
+		<form method="post" class="form-horizontal " action="{:U('Resident/featuresEditPost')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">人员类型</label>
+					<div class="controls">
+						<input type="text" name="attname" value="{$re.attname}">
+						<input type="hidden" name="id" value="{$re.id}">
+						<span class="form-required" style="color:red">输入中文名称</span>
+					</div>
+				</div>
+					<div class="control-group">
+					<label class="control-label">字段值</label>
+					<div class="controls">
+						<input type="text" name="att" value="{$re.att}">
+						<span class="form-required" style="color:red">为英文或拼音</span>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">保存</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	
+</body>
+</html>

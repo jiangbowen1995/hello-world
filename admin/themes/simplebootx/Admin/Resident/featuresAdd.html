@@ -1,0 +1,42 @@
+<admintpl file="header" />
+</head>
+<body>
+		
+<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Resident/index')}">居民列表</a></li>
+			<li><a href="{:U('Resident/add')}">居民添加</a></li>
+			<li ><a href="{:U('Resident/featuresIndex')}">全部居民类型</a></li>
+			<li class="active"><a href="{:U('Resident/featuresAdd')}">添加居民类型</a></l>
+			<li><a href="{:U('Resident/import')}">批量添加</a></li>
+			
+		</ul>
+		<form method="post" class="form-horizontal " action="{:U('Resident/featuresPost')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">居民类型</label>
+					<div class="controls">
+						<input type="text" name="attname">
+						<span class="form-required" style="color:red">输入中文名称</span>
+					</div>
+				</div>
+					<div class="control-group">
+					<label class="control-label">字段值</label>
+					<div class="controls">
+						<input type="text" name="att">
+						<span class="form-required" style="color:red">为英文或拼音</span>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">保存</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	
+</body>
+</html>

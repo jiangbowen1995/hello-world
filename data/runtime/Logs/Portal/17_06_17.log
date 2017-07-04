@@ -1,0 +1,148 @@
+[ 2017-06-17T16:15:36+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002846s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005430s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.002362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011792s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.006593s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.006678s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('主页图片','','','','2017-06-17 16:14:49','1','0','0','2017-06-17 16:15:36','1','{\"thumb\":\"portal\\/20170617\\/5944e52164d70.jpg\",\"template\":\"\"}','') [ RunTime:0.0285s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('35','197') [ RunTime:0.0181s ]
+
+[ 2017-06-17T16:17:19+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001019s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002453s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005101s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003978s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004112s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0007s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 197 AND `term_id` NOT IN ('35') [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 197 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 197 AND `term_id` = '35' [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='主页图片',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-17 16:14:49',`post_status`='0',`istop`='0',`recommended`='0',`post_modified`='2017-06-17 16:17:19',`smeta`='{\"thumb\":\"portal\\/20170617\\/5944e52164d70.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '197' [ RunTime:0.0280s ]
+
+[ 2017-06-17T16:19:30+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002649s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.005235s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.002911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011928s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.007875s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.007995s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('设计方案主题图片','','','','2017-06-17 16:18:58','0','0','0','2017-06-17 16:19:30','1','{\"thumb\":\"portal\\/20170617\\/5944e5fb7013a.jpg\",\"template\":\"\"}','') [ RunTime:0.0994s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('36','198') [ RunTime:0.0171s ]
+
+[ 2017-06-17T16:19:57+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001833s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003444s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008137s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.006461s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.006580s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('工程案例主题图片','','','','2017-06-17 16:19:33','0','0','0','2017-06-17 16:19:57','1','{\"thumb\":\"portal\\/20170617\\/5944e61be5a7a.jpg\",\"template\":\"\"}','') [ RunTime:0.0846s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('42','199') [ RunTime:0.0179s ]
+
+[ 2017-06-17T16:20:19+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001009s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002599s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005523s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003363s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003442s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('合作流程主题图片','','','','2017-06-17 16:19:59','1','0','0','2017-06-17 16:20:19','1','{\"thumb\":\"portal\\/20170617\\/5944e640b3d9a.jpg\",\"template\":\"\"}','') [ RunTime:0.0444s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('43','200') [ RunTime:0.0155s ]
+
+[ 2017-06-17T16:20:52+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001248s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002883s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005933s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003561s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003647s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('关于我们主题图片','','','','2017-06-17 16:20:20','0','0','0','2017-06-17 16:20:52','1','{\"thumb\":\"portal\\/20170617\\/5944e65dc9709.jpg\",\"template\":\"\"}','') [ RunTime:0.0807s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('44','201') [ RunTime:0.0395s ]
+
+[ 2017-06-17T16:21:10+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002930s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005851s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003273s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003358s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('新闻主题','','','','2017-06-17 16:20:53','0','0','0','2017-06-17 16:21:09','1','{\"thumb\":\"portal\\/20170617\\/5944e67246003.jpg\",\"template\":\"\"}','') [ RunTime:0.1044s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('46','202') [ RunTime:0.0332s ]
+
+[ 2017-06-17T16:21:34+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004400s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008002s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004184s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004271s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0008s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 200 AND `term_id` NOT IN ('43') [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 200 AND `term_id` = '43' LIMIT 1   [ RunTime:0.0005s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 200 AND `term_id` = '43' [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: post_content D:\wp\wamp\www\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='合作流程主题图片',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-17 16:19:59',`post_status`='0',`istop`='0',`recommended`='0',`post_modified`='2017-06-17 16:21:33',`smeta`='{\"thumb\":\"portal\\/20170617\\/5944e640b3d9a.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '200' [ RunTime:0.0792s ]
+

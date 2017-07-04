@@ -1,0 +1,62 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+	<ul class="nav nav-tabs">
+	
+		<if condition="$ty eq 1">
+			<li ><a href="{:U('features/index')}&ty=0">全部居民特征</a></li>
+			<li class="active"><a href="{:U('features/index')}&ty=1">全部住户特征</a></li>
+		<else/>
+			<li class="active"><a href="{:U('features/index')}&ty=0">全部居民特征</a></li>
+			<li><a href="{:U('features/index')}&ty=1">全部住户特征</a></li>
+		</if>
+		<!--<li class="active"><a href="{:U('features/index')}&ty=0">全部人员特征</a></li>
+		<li><a href="{:U('features/index')}&ty=1">全部住户特征</a></li>-->
+		<li ><a href="{:U('features/add')}&ty=0">添加居民特征</a></li>
+		<li><a href="{:U('features/add')}&ty=1">添加住户特征</a></li>			
+	</ul>
+	<form method="post" class="js-ajax-form" novalidate="novalidate">
+	
+			<table class="table table-hover table-bordered">
+
+				<thead>
+					<tr>
+						<th>字段值</th>
+						<th>特征名</th>
+						<th>属性</th>
+						
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<foreach name="res" item="vo" > 
+					<tbody>
+						<tr>
+							<!-- <if condition="is_array($vo)">
+								<foreach name="vo" item="v">
+									<td>{$v.name}</td>
+									<td>{$v.features}</td>
+									<td>
+										<a href="{:U('features/delete')}&features={$v.name}">删除</a>|
+										<a href="{:U('features/edit')}&features={$v.name}&va=1" >修改</a>
+									</td>
+								</foreach>
+							<else /> -->
+							<!-- </if> -->
+							<td>{$vo.att}</td>
+							<td>{$vo.attname}</td>
+							<td>{$vo.value}</td>	
+							<td><a href="{:U('features/delete')}&id={$vo.id}">删除</a>|
+								<a href="{:U('features/edit')}&id={$vo.id}">修改</a>
+							</td>
+							
+							
+
+							
+					</tbody>
+				</foreach>	
+			</table>
+			<div class="pagination"></div>
+		</form>
+</div>
+</body>

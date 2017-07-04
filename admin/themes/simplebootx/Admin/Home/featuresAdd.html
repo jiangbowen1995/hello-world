@@ -1,0 +1,55 @@
+<admintpl file="header" />
+</head>
+<body>
+	
+		<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs">
+			<li ><a href="{:U('Home/index')}&homeType=1">个人房</a></li>
+			<li><a href="{:U('Home/index')}&homeType=2">单位房</a></li>
+			<li><a href="{:U('Home/add')}">住户添加</a></li>
+			<li><a href="{:U('Home/featuresIndex')}">住户特征</a></li>
+			<li class="active"><a href="{:U('Home/featuresIndex')}">添加住户特征</a></li>
+		</ul>
+		<div class="wrap">
+		<ul class="nav">
+		<!-- <a href="{:U('features/add',array('type'=>0))}&ty={$ty}">单选类型</a>
+		|<a href="{:U('features/add',array('type'=>1))}&ty={$ty}">多选类型</a> -->
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Home/featuresPost')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">特征名称</label>
+					<div class="controls">
+						<input type="text" name="attname">
+						<span class="form-required" style="color:red">输入中文名称</span>
+					</div>
+				</div>
+					<div class="control-group">
+					<label class="control-label">字段值</label>
+					<div class="controls">
+						<input type="text" name="att">
+						<input type="hidden" name="type" value="1">
+						<span class="form-required" style="color:red">为英文或拼音</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">属性</label>
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<select name="type" style="width:80px" id="mySelect">
+							<option value="1">个人房</option>
+							<option value="2">单位房</option>
+						</select> 
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">保存</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	
+</body>
+</html>

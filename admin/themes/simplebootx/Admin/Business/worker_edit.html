@@ -1,0 +1,154 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Business/worker')}">人员列表</a></li>
+			<li><a href="{:U('Business/worker_add')}">人员添加</a></li>
+			<li><a href="{:U('Business/worker_import')}">批量添加</a></li>
+			<li class="active"><a>人员编辑</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form form-flat" action="{:U('Business/worker_edit_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">商户:</label>
+					<div class="controls">
+						<select name="business_id" id="business_id">
+							<option value="">请选择</option>
+							<foreach name="business" item="vo">
+							<option value="{$vo.id}" <if condition="$vo['id'] == $data['business_id']">selected</if>>{$vo.name}号楼</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">姓名:</label>
+					<div class="controls">
+						<input type="text" name="xingming" value="{$data.xingming}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">曾用名:</label>
+					<div class="controls">
+						<input type="text" name="cengyong" value="{$data.cengyong}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">性别:</label>
+					<div class="controls">
+						<select name="xingbie">
+							<option value="男" <if condition="$data['xingbie'] == '男'">selected</if>>男</option>
+							<option value="女" <if condition="$data['xingbie'] == '女'">selected</if>>女</option>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">民族:</label>
+					<div class="controls">
+						<input type="text" name="minzu" value="{$data.minzu}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">联系电话:</label>
+					<div class="controls">
+						<input type="text" name="dianhua" value="{$data.dianhua}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">出生日期:</label>
+					<div class="controls">
+						<input type="text" name="chusheng" class="js-date" style="width: 120px;" autocomplete="off" value="{$data.chusheng}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">户籍:</label>
+					<div class="controls">
+						<input type="text" name="huji" value="{$data.huji}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">身份证:</label>
+					<div class="controls">
+						<input type="text" name="shenfenzheng" value="{$data.shenfenzheng}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">常住:</label>
+					<div class="controls">
+						<select name="changzhu">
+							<option value="">请选择</option>
+							<option value="0" <if condition="$data['changzhu'] == '0'">selected</if>>常住人口</option>
+							<option value="1" <if condition="$data['changzhu'] == '1'">selected</if>>外省市流动人口</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">人户分离入口:</label>
+					<div class="controls">
+						<select name="fenli">
+							<option value="">请选择</option>
+							<option value="本市它区" <if condition="$data['fenli'] == '本市它区'">selected</if>>本市它区</option>
+							<option value="本县他乡" <if condition="$data['fenli'] == '本县他乡'">selected</if>>本县他乡</option>
+							<option value="本辖区内人户分离" <if condition="$data['fenli'] == '本辖区内人户分离'">selected</if>>本辖区内人户分离</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">职业:</label>
+					<div class="controls">
+						<input type="text" name="zhiye" value="{$data.zhiye}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">处所:</label>
+					<div class="controls">
+						<input type="text" name="chusuo" value="{$data.chusuo}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">拥有机动车类型:</label>
+					<div class="controls">
+						<input type="text" name="jidongche" value="{$data.jidongche}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">车牌号码:</label>
+					<div class="controls">
+						<input type="text" name="chepai" value="{$data.chepai}">
+					</div>
+				</div>
+				<div class="clear">
+					<label class="control-label">其他:</label>
+					<div class="controls">
+						<label class="flat-label"><input name="xingman" type="checkbox" value="1" <if condition="$data['xingman'] == 1">checked</if>> 刑满释放不满五年的</label>
+						<label class="flat-label"><input name="xianyi" type="checkbox" value="1" <if condition="$data['xianyi'] == 1">checked</if>> 刑事嫌疑人员</label>
+						<label class="flat-label"><input name="xidu" type="checkbox" value="1" <if condition="$data['xidu'] == 1">checked</if>> 吸毒人员</label>
+						<label class="flat-label"><input name="gaowei" type="checkbox" value="1" <if condition="$data['gaowei'] == 1">checked</if>> 高危人员</label>
+						<label class="flat-label"><input name="falungong" type="checkbox" value="1" <if condition="$data['falungong'] == 1">checked</if>> 法轮功</label>
+						<label class="flat-label"><input name="shijishen" type="checkbox" value="1" <if condition="$data['shijishen'] == 1">checked</if>> 实际神</label>
+						<label class="flat-label"><input name="mentuhui" type="checkbox" value="1" <if condition="$data['mentuhui'] == 1">checked</if>> 门徒会</label>
+						<label class="flat-label"><input name="sanbanpurenpai" type="checkbox" value="1" <if condition="$data['sanbanpurenpai'] == 1">checked</if>> 三班仆人派</label>
+						<label class="flat-label"><input name="jingwai" type="checkbox" value="1" <if condition="$data['jingwai'] == 1">checked</if>> 境外人员</label>
+						<label class="flat-label"><input name="guanggua" type="checkbox" value="1" <if condition="$data['guanggua'] == 1">checked</if>> 光寡孤独</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$data.id}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

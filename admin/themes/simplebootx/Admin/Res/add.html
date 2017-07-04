@@ -1,0 +1,54 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Res/index')}">物品列表</a></li>
+			<li class="active"><a href="{:U('Res/add')}">物品添加</a></li>
+		</ul>
+		<form method="post" class="form-horizontal js-ajax-form" action="{:U('Res/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">物品名称:</label>
+					<div class="controls">
+						<input type="text" name="name">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">类别:</label>
+					<div class="controls">
+						<select name="cate_id">
+							<option value="">请选择</option>
+							<foreach name="cates" item="vo">
+							<option value="{$vo.id}">{$vo.name}</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">坐标:</label>
+					<div class="controls">
+						横坐标：<input type="text" name="lng" style="width:30px">
+						<span class="form-required">*</span>
+						纵坐标：<input type="text" name="lat" style="width:30px">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">备注:</label>
+					<div class="controls">
+						<textarea name="remark" rows="5" cols="57" style="width: 500px;"></textarea>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

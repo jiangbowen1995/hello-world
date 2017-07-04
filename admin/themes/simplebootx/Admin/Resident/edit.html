@@ -1,0 +1,228 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<a href="">编辑</a>
+		</ul>
+		<form method="post" class="form-horizontal form-flat" action="{:U('Resident/edit_post')}">
+		<!-- js-ajax-form -->
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">楼号:</label>
+					<div class="controls">
+						<select name="building_id" id="building_id" class="js-ajax-select" data-id="unit_id" data-href="{:U('Resident/unit_json')}">
+							<option value="">请选择</option>
+							<foreach name="buildings" item="vo">
+							<option value="{$vo.id}" <if condition="$vo['id'] == $data['building_id']">selected</if>>{$vo.num}号楼</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">单元数:</label>
+					<div class="controls">
+						<select name="unit_id" id="unit_id" class="js-ajax-select" data-id="home_id" data-href="{:U('Resident/num_json')}">
+							<option value="{$data.home_id}">{$data.home_unit}单元</option>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">房间号:</label>
+					<div class="controls">
+						<select name="home_id" id="home_id">
+							<option value="{$data.home_id}">{$data.home_num}</option>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">姓名:</label>
+					<div class="controls">
+						<input type="text" name="xingming" value="{$data.xingming}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">曾用名:</label>
+					<div class="controls">
+						<input type="text" name="cengyong" value="{$data.cengyong}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">性别:</label>
+					<div class="controls">
+						<select name="xingbie" id = "sex">
+							<option value="男" <if condition="$data['xingbie'] == '男'">selected</if>>男</option>
+							<option value="女" <if condition="$data['xingbie'] == '女'">selected</if>>女</option>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">民族:</label>
+					<div class="controls">
+						<input type="text" name="minzu" value="{$data.minzu}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">联系电话:</label>
+					<div class="controls">
+						<input type="text" name="dianhua" value="{$data.dianhua}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">出生日期:</label>
+					<div class="controls">
+						<input type="text" name="chusheng" class="js-date" style="width: 120px;" autocomplete="off" value="{$data.chusheng}" id="birthday">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">户籍:</label>
+					<div class="controls">
+						<input type="text" name="huji" value="{$data.huji}">
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">身份证:</label>
+					<div class="controls">
+						<input type="text" name="shenfenzheng" value="{$data.shenfenzheng}" id="shenfenzheng">
+						<span class="form-required" id="shenfen" style="color:red">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">常住:</label>
+					<div class="controls">
+						<select name="changzhu">
+							<option value="">请选择</option>
+							<option value="0" <if condition="$data['changzhu'] == '0'">selected</if>>常住人口</option>
+							<option value="1" <if condition="$data['changzhu'] == '1'">selected</if>>外省市流动人口</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" name="fenli">人户分离入口:</label>
+					<div class="controls">
+						<select name="fenli">
+							<option value="">请选择</option>
+
+							<option value="本市它区" <if condition="($data['fenli'] eq '人在户不在')">selected</if>>人在户不在</option>
+							<option value="本县他乡" <if condition="($data['fenli'] eq '户在人不在')">selected</if>>户在人不在</option>
+							<option value="本辖区内人户分离" <if condition="($data['fenli'] eq '本区人员')">selected</if>>本区人员</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">职业:</label>
+					<div class="controls">
+						<input type="text" name="zhiye" value="{$data.zhiye}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">处所:</label>
+					<div class="controls">
+						<input type="text" name="chusuo" value="{$data.chusuo}">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">是否为房主</label>
+					<div class="controls" style="margin-top: 2	px" ;>
+						<input type="radio" name="fangzhu" value="0" 
+							<if condition="($data.fangzhu eq 0)">
+								checked="checked"
+							</if>
+						>&nbsp;否 &nbsp; &nbsp;
+						<input type="radio" name="fangzhu" value="1" <if condition="($data.fangzhu eq 1)">
+								checked="checked"
+							</if>>&nbsp;是
+					</div>
+				</div>
+				<div class="clear">
+					<label class="control-label">其他:</label>
+					<div class="controls">
+					<foreach name="att" item="vo">
+						<label class="flat-label"><input name="flag[]" type="checkbox" value="{$vo.id}" <if condition="$vo.check == 1">checked</if>>{$vo.attname}</label>
+					</foreach>
+						<!-- <input name="xianyi" type="checkbox" value="1" <if condition="$data['xianyi'] == 1">checked</if>> 刑事嫌疑人员 -->
+						<!-- <input name="xidu" type="checkbox" value="1" <if condition="$data['xidu'] == 1">checked</if>> 吸毒人员
+						<input name="gaowei" type="checkbox" value="1" <if condition="$data['gaowei'] == 1">checked</if>> 高危人员
+						<input name="falungong" type="checkbox" value="1" <if condition="$data['falungong'] == 1">checked</if>> 法轮功
+						<input name="shijishen" type="checkbox" value="1" <if condition="$data['shijishen'] == 1">checked</if>> 实际神
+						<input name="mentuhui" type="checkbox" value="1" <if condition="$data['mentuhui'] == 1">checked</if>> 门徒会
+						<input name="sanbanpurenpai" type="checkbox" value="1" <if condition="$data['sanbanpurenpai'] == 1">checked</if>> 三班仆人派
+						<input name="jingwai" type="checkbox" value="1" <if condition="$data['jingwai'] == 1">checked</if>> 境外人员
+						<input name="guanggua" type="checkbox" value="1" <if condition="$data['guanggua'] == 1">checked</if>> 光寡孤独 -->
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<input type="hidden" name="id" value="{$data.id}">
+				<button type="submit" class="btn btn-primary js-ajax-submit">{:L('EDIT')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script type="text/javascript">
+		// 验证身份证 
+	
+		$("#shenfenzheng").blur(function(){
+			// alert($('#shenfenzheng').val());
+			var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/; 
+			var name = $('#shenfenzheng').val();
+			if (!pattern.test(name)) {
+				$("#shenfen").html('身份证格式错误');
+				$('#button').attr('disabled',"true");
+			}
+			else{
+			$('#button').removeAttr("disabled");	
+			var	year= name.slice(6,10);
+			var month = name.slice(10,12);
+			var day = name.slice(12,14);
+			var sex = name.slice(16,17);
+			var birthday = year+'-'+month+'-'+day;
+			$("#birthday").val(birthday);
+			if ( sex%2 == 0 ) {
+				 $("#sex").find("option").eq(1).attr("selected","selected");
+				
+			} else{
+				$("#sex").find("option").eq(2).attr("selected","selected");
+							
+			}
+
+			
+			if (name !== '') {
+			var url = "{:U('Resident/ajaxResident')}";
+			$.ajax({
+				 type: "POST",
+				 url:url,
+				 data:{shenfenzheng:name},
+				 // dataType: "json",
+				 success: function(data){
+					console.log(data);
+					if ( data == 1){
+						$("#shenfen").html('身份证已存在');
+
+					}else if( data == 0){
+						$("#shenfen").html('身份证可用');
+					}
+				 },
+				 error:function(){
+				 	console.log('ajax请求失败');
+				 }
+			});
+		}else{
+			$("#shenfen").html('身份证不为空');
+		}
+		}
+		});
+	</script>
+</body>
+</html>

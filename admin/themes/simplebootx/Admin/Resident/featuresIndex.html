@@ -1,0 +1,42 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">
+		<ul class="nav nav-tabs"><li >
+			<li ><a href="{:U('Resident/index')}">居民列表</a></li>
+			<li><a href="{:U('Resident/add')}">居民添加</a></li>
+			<li class="active"><a href="{:U('Resident/featuresIndex')}">全部居民类型</a></li>
+			<li><a href="{:U('Resident/featuresAdd')}">添加居民类型</a></l>
+			<li><a href="{:U('Resident/import')}">批量添加</a></li>
+		</ul>
+	<form method="post" class="js-ajax-form" novalidate="novalidate">
+			<table class="table table-hover table-bordered">
+
+				<thead>
+					<tr>
+						<th>字段值</th>
+						<th>特征名</th>
+					
+						
+						<th align="center">操作</th>
+					</tr>
+				</thead>
+				<foreach name="res" item="vo" > 
+					<tbody>
+						<tr>
+							<td>{$vo.att}</td>
+							<td>{$vo.attname}</td>
+							<td><a class="js-ajax-delete" href="{:U('Resident/featuresDelete')}&id={$vo.id}" >{:L('DELETE')}</a>|
+								<a href="{:U('Resident/featuresEdit')}&id={$vo.id}">修改</a>
+							</td>
+							
+							
+
+							
+					</tbody>
+				</foreach>	
+			</table>
+			<div class="pagination"></div>
+		</form>
+		</div>
+</body>

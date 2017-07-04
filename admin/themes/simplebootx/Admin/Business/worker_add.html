@@ -1,0 +1,172 @@
+<admintpl file="header" />
+</head>
+<body>
+	<div class="wrap">
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('Business/worker')}">人员列表</a></li>
+			<li class="active"><a href="{:U('Business/worker_add')}">人员添加</a></li>
+			<li><a href="{:U('Business/worker_import')}">批量添加</a></li>
+		</ul>
+		<form method="post" class="form-horizontal  form-flat" action="{:U('Business/worker_add_post')}">
+		<!-- js-ajax-form -->
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">商户:</label>
+					<div class="controls">
+						<select name="business_id" id="business_id">
+							<option value="">请选择</option>
+							<foreach name="business" item="vo">
+							<option value="{$vo['id']}"
+							<if condition="$vo['id'] == $id"> selected </if>
+
+							>{$vo['name']}</option>
+							</foreach>
+						</select>
+						<span class="form-required">*</span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">姓名:</label>
+					<div class="controls">
+						<input type="text" name="xingming" id="xingming" required>
+						<span class="form-required">*</span><span id="span1"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">身份证:</label>
+					<div class="controls">
+						<input type="text" name="shenfenzheng" id="shenfenzheng" required>
+						<span class="form-required" >*</span><span id="span2"></span>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">曾用名:</label>
+					<div class="controls">
+						<input type="text" name="cengyong">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">性别:</label>
+					<div class="controls">
+						<select name="xingbie">
+							<option value="男">男</option>
+							<option value="女">女</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">民族:</label>
+					<div class="controls">
+						<input type="text" name="minzu">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">联系电话:</label>
+					<div class="controls">
+						<input type="text" name="dianhua">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">出生日期:</label>
+					<div class="controls">
+						<input type="text" name="chusheng" class="js-date" style="width: 120px;" autocomplete="off">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">户籍:</label>
+					<div class="controls">
+						<input type="text" name="huji">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">常住:</label>
+					<div class="controls">
+						<select name="changzhu">
+							<option value="">请选择</option>
+							<option value="0">常住人口</option>
+							<option value="1">外省市流动人口</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">人户分离入口:</label>
+					<div class="controls">
+						<select name="fenli">
+							<option value="">请选择</option>
+							<option value="本市它区">本市它区</option>
+							<option value="本县他乡">本县他乡</option>
+							<option value="本辖区内人户分离">本辖区内人户分离</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">职业:</label>
+					<div class="controls">
+						<input type="text" name="zhiye">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">处所:</label>
+					<div class="controls">
+						<input type="text" name="chusuo">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">拥有机动车类型:</label>
+					<div class="controls">
+						<input type="text" name="jidongche">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label">车牌号码:</label>
+					<div class="controls">
+						<input type="text" name="chepai">
+					</div>
+				</div>
+				<div class="clear">
+					<label class="control-label">其他:</label>
+					<div class="controls">
+						<label class="flat-label"><input name="xingman" type="checkbox" value="1"> 刑满释放不满五年的</label>
+						<label class="flat-label"><input name="xianyi" type="checkbox" value="1"> 刑事嫌疑人员</label>
+						<label class="flat-label"><input name="xidu" type="checkbox" value="1"> 吸毒人员</label>
+						<label class="flat-label"><input name="gaowei" type="checkbox" value="1"> 高危人员</label>
+						<label class="flat-label"><input name="falungong" type="checkbox" value="1"> 法轮功</label>
+						<label class="flat-label"><input name="shijishen" type="checkbox" value="1"> 实际神</label>
+						<label class="flat-label"><input name="mentuhui" type="checkbox" value="1"> 门徒会</label>
+						<label class="flat-label"><input name="sanbanpurenpai" type="checkbox" value="1"> 三班仆人派</label>
+						<label class="flat-label"><input name="jingwai" type="checkbox" value="1"> 境外人员</label>
+						<label class="flat-label"><input name="guanggua" type="checkbox" value="1"> 光寡孤独</label>
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary js-ajax-submit" id=mybutton  >{:L('ADD')}</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+	<script>
+			$('#xingming').blur(function(){
+			$.post("{:U('admin/business/ajax')}",{'xingming':$('#xingming').val()},function(msg){
+				if(msg == 1){
+					$('#span1').html('<font style="font-size:12px;color:red">此用户姓名已存在</font>')
+					$('#mybutton').attr("disabled","disabled");
+				}
+			},'json');
+
+			})
+			$('#shenfenzheng').blur(function(){
+			$.post("{:U('admin/business/ajax')}",{'sfz':$('#shenfenzheng').val()},function(msg){
+				if(msg == 1){
+					$('#span2').html('<font style="font-size:12px;color:red">此用户身份证已存在</font>')
+					$('#mybutton').attr("disabled","disabled");
+				}
+			},'json');
+
+			})
+
+
+	</script>
+</body>
+</html>

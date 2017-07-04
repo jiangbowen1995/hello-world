@@ -1,0 +1,51 @@
+<admintpl file="header" />
+</head>
+<body>
+<div class="wrap js-check-wrap">	
+		<ul class="nav nav-tabs">
+			<li><a href="{:U('features/index')}&ty=0">全部人员特征</a></li>
+			<li><a href="{:U('features/index')}&ty=1">全部住户特征</a></li>
+			
+			<if condition="$ty eq 1">
+				<li ><a href="{:U('features/add')}&ty=0">添加人员特征</a></li>
+				<li class="active"><a href="{:U('features/add')}&ty=1">添加住户特征</a></li>
+			<else/>
+				<li class="active"><a href="{:U('features/add')}&ty=0">添加人员特征</a></li>
+				<li ><a href="{:U('features/add')}&ty=1">添加住户特征</a></li>
+			</if>
+		</ul>
+		<div class="wrap">
+		<ul class="nav">
+		<a href="{:U('features/add',array('type'=>0))}&ty={$ty}">单选类型</a>
+		<!--|<a href="{:U('features/add',array('type'=>1))}&ty={$ty}">多选类型</a>-->
+		</ul>
+		<form method="post" class="form-horizontal " action="{:U('admin/features/add_post')}">
+			<fieldset>
+				<div class="control-group">
+					<label class="control-label">特征名称</label>
+					<div class="controls">
+						<input type="text" name="attname">
+						<span class="form-required" style="color:red">输入中文名称</span>
+					</div>
+				</div>
+					<div class="control-group">
+					<label class="control-label">字段值</label>
+					<div class="controls">
+						<input type="text" name="att">
+						<input type="hidden" name="type" value="0">
+						<input type="hidden" name="ty" value="{$ty}">
+						<span class="form-required" style="color:red">为英文或拼音</span>
+					</div>
+				</div>
+
+			</fieldset>
+			<div class="form-actions">
+				<button type="submit" class="btn btn-primary">保存</button>
+				<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
+			</div>
+		</form>
+	</div>
+	<script src="__PUBLIC__/js/common.js"></script>
+</div>
+</body>
+</html>

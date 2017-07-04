@@ -1,0 +1,68 @@
+[ 2017-06-16T14:05:24+08:00 ] ::1 /
+ERR: SQLSTATE[HY000] [1049] Unknown database 'wldk_huayuan2'
+
+[ 2017-06-16T14:06:44+08:00 ] ::1 /
+ERR: SQLSTATE[HY000] [1049] Unknown database 'wldk_huayuan2'
+
+[ 2017-06-16T15:23:23+08:00 ] ::1 /index.php?g=jlhyhome&m=index&a=index&ce=term_id&va=35
+ERR: SQLSTATE[HY000] [2002] Ì×½Ó×Ö²Ù×÷³¢ÊÔÒ»¸öÎŞ·¨Á¬½ÓµÄÖ÷»ú¡£
+
+
+[ 2017-06-16T15:26:43+08:00 ] ::1 /index.php?g=jlhyhome&m=index&a=index&ce=term_id&va=35
+ERR: SQLSTATE[HY000] [2002] ÏòÒ»¸öÎŞ·¨Á¬½ÓµÄÍøÂç³¢ÊÔÁËÒ»¸öÌ×½Ó×Ö²Ù×÷¡£
+
+
+[ 2017-06-16T15:26:46+08:00 ] ::1 /index.php?g=jlhyhome&m=index&a=index&ce=term_id&va=35
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ı¼«¾Ü¾ø£¬ÎŞ·¨Á¬½Ó¡£
+
+
+[ 2017-06-16T15:26:48+08:00 ] ::1 /index.php?g=jlhyhome&m=index&a=index&ce=term_id&va=35
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ı¼«¾Ü¾ø£¬ÎŞ·¨Á¬½Ó¡£
+
+
+[ 2017-06-16T15:27:07+08:00 ] ::1 /
+ERR: SQLSTATE[HY000] [2002] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ı¼«¾Ü¾ø£¬ÎŞ·¨Á¬½Ó¡£
+
+
+[ 2017-06-16T16:20:40+08:00 ] ::1 /index.php?m=formguide&c=index&a=show&formid=12&siteid=1&
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+ERR: æ— æ³•åŠ è½½æ§åˆ¶å™¨:Formguide
+
+[ 2017-06-16T21:29:12+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T21:33:49+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T21:33:50+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T21:33:50+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T21:33:51+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T21:43:34+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T21:43:35+08:00 ] 127.0.0.1 /
+ERR: 1146:Table 'wldk_jlhy.wldk_terms' doesn't exist
+ [ SQLè¯­å¥ ] : SELECT COUNT(*) AS tp_count FROM `wldk_posts` a left join wldk_term_relationships b on a.id = b.object_id left join wldk_terms c on b.term_id = c.term_id  WHERE b.term_id = 35 AND `post_status` = 1 LIMIT 1  
+
+[ 2017-06-16T22:24:38+08:00 ] 127.0.0.1 /index.php/Jlhyhome/news/show/id/176
+ERR: æ¨¡æ¿ä¸å­˜åœ¨:themes/simplebootx/Jlhyhome/News/show.html
+
+[ 2017-06-16T22:25:38+08:00 ] 127.0.0.1 /index.php/Jlhyhome/news/show/id/176
+ERR: æ¨¡æ¿ä¸å­˜åœ¨:themes/simplebootx/Jlhyhome/News/show.html
+

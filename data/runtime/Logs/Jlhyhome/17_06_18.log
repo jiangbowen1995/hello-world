@@ -1,0 +1,137 @@
+[ 2017-06-18T00:01:50+08:00 ] 127.0.0.1 /index.php/Jlhyhome/design/show
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001654s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004315s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+NOTIC: [8] Undefined variable: self D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001182s ]
+
+[ 2017-06-18T00:02:58+08:00 ] 127.0.0.1 /index.php/Jlhyhome/design/show
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001499s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003833s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+NOTIC: [8] Undefined variable: self D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 61 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001194s ]
+
+[ 2017-06-18T00:13:52+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001206s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005155s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-06-18T00:14:20+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001162s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003201s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002184s ]
+
+[ 2017-06-18T00:14:41+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001381s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003566s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001275s ]
+
+[ 2017-06-18T00:20:32+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000904s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001376s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003790s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002134s ]
+
+[ 2017-06-18T00:20:43+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002619s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006759s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001334s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2017-06-18T00:22:16+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001980s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002437s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006954s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002376s ]
+
+[ 2017-06-18T00:22:46+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002240s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005121s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2017-06-18T10:03:49+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001333s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003503s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2017-06-18T10:08:43+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001911s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004778s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000849s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2017-06-18T10:11:22+08:00 ] 127.0.0.1 /index.php/jlhyhome/design/show?name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001130s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003267s ]
+NOTIC: [2048] Declaration of jlhyhome\Controller\DesignController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wp\wamp\www\jlhy2\trunk\application\Jlhyhome\Controller\DesignController.class.php 第 4 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2017-06-18T10:58:39+08:00 ] 127.0.0.1 /index.php&g=Jlhyhome&m=design&a=show&id=191&name=/index.php/Jlhyhome/design/index/ce/term_id/va/36
+ERR: 无法加载控制器:Index.php&g=Jlhyhome&m=design&a=show&id=191&name=
+

@@ -1,0 +1,213 @@
+[ 2017-06-08T11:21:50+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 64 行.
+SQL: INSERT INTO `wldk_posts` (`post_title`,`post_keywords`,`post_source`,`post_excerpt`,`post_date`,`post_status`,`istop`,`recommended`,`post_modified`,`post_author`,`smeta`,`post_content`) VALUES ('安防监控','','','','2017-06-08 11:21:27','1','0','0','2017-06-08 11:21:50','1','{\"thumb\":\"portal\\/20170608\\/5938c2c4f3b0d.jpg\",\"template\":\"\"}','') [ RunTime:0.0190s ]
+SQL: INSERT INTO `wldk_term_relationships` (`term_id`,`object_id`) VALUES ('35','195') [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:23:35+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=delete&id=195
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+SQL: UPDATE `wldk_posts` SET `post_status`='3' WHERE `id` = 195 [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:23:58+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0110s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 166 AND `term_id` NOT IN ('35') [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 166 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 166 AND `term_id` = '35' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='安防监控',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:36:43',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:23:58',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c34b867c5.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '166' [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:24:42+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 165 AND `term_id` NOT IN ('35') [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 165 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 165 AND `term_id` = '35' [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='综合布线',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:35:50',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:24:42',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c37747603.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '165' [ RunTime:0.0060s ]
+
+[ 2017-06-08T11:25:10+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.004000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 164 AND `term_id` NOT IN ('35') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 164 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 164 AND `term_id` = '35' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='多媒体工程',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:35:22',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:25:10',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c39323a1c.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '164' [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:25:33+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 163 AND `term_id` NOT IN ('35') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 163 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 163 AND `term_id` = '35' [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='酒店智能化',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:34:44',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:25:33',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3aaa4dde.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '163' [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:25:38+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0090s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 163 AND `term_id` NOT IN ('35') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 163 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 163 AND `term_id` = '35' [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='酒店智能化',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:34:44',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:25:38',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3aaa4dde.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '163' [ RunTime:0.0040s ]
+
+[ 2017-06-08T11:26:06+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.003000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0120s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 162 AND `term_id` NOT IN ('35') [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 162 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 162 AND `term_id` = '35' [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='一卡通系统',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:34:01',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:26:06',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3cbe645c.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '162' [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:26:31+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003001s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0110s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 161 AND `term_id` NOT IN ('35') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 161 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 161 AND `term_id` = '35' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='广播系统',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:33:21',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:26:31',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3e3d9aae.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '161' [ RunTime:0.0030s ]
+
+[ 2017-06-08T11:26:54+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.004001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0100s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 160 AND `term_id` NOT IN ('35') [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 160 AND `term_id` = '35' LIMIT 1   [ RunTime:0.0030s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 160 AND `term_id` = '35' [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: post_content D:\jlhy2\trunk\application\Portal\Controller\AdminPostController.class.php 第 125 行.
+SQL: UPDATE `wldk_posts` SET `post_title`='机房建设',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 13:32:16',`post_status`='1',`istop`='0',`recommended`='0',`post_modified`='2017-06-08 11:26:54',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c3fc20759.jpg\",\"template\":\"\"}',`post_content`='' WHERE `id` = '160' [ RunTime:0.0040s ]
+
+[ 2017-06-08T11:28:47+08:00 ] 127.0.0.1 /index.php?g=Portal&m=AdminPost&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.003000s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.002001s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `wldk_users` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `wldk_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `wldk_posts` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_terms` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `wldk_term_relationships` [ RunTime:0.0080s ]
+SQL: DELETE FROM `wldk_term_relationships` WHERE `object_id` = 173 AND `term_id` NOT IN ('36') [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wldk_term_relationships` WHERE `object_id` = 173 AND `term_id` = '36' LIMIT 1   [ RunTime:0.0020s ]
+SQL: UPDATE `wldk_term_relationships` SET `status`='1' WHERE `object_id` = 173 AND `term_id` = '36' [ RunTime:0.0020s ]
+SQL: UPDATE `wldk_posts` SET `post_title`='一卡通',`post_keywords`='',`post_source`='',`post_excerpt`='',`post_date`='2017-06-06 16:42:07',`post_status`='1',`istop`='0',`recommended`='0',`post_content`='<p>一卡通信息管理系统本质上是一套由卡片、器具和上位管理软件所构成的特殊信息管理系统。其核心内容是利用卡片这种特定的物理媒介，实现从业务数据的生成、采集、传输到汇总分析的信息资源管理的规范化和自动化。同时企业一卡通作为企业信息化管理的一部分和企业的ERP系统、财务系统以及HR系统有着密不可分的联系。</p>',`post_modified`='2017-06-08 11:28:47',`smeta`='{\"thumb\":\"portal\\/20170608\\/5938c46c208ef.jpg\",\"template\":\"\"}' WHERE `id` = '173' [ RunTime:0.0040s ]
+
